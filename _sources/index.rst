@@ -1,7 +1,7 @@
-Tepkit
-======
+Tepkit Documentation
+====================
 
-**Welcome to Tepkit!**
+**Welcome to Tepkit Documentation!**
 
 .. note::
    The documentation is in the early stages and will be improved over time.
@@ -41,6 +41,7 @@ Tepkit
    :maxdepth: 1
    :caption: API Reference
 
+   Overview                 <others/api_reference_overview>
    autoapi/tepkit/core/index
    autoapi/tepkit/io/index
    autoapi/tepkit/utils/index
