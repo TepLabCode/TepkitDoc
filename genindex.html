@@ -1,0 +1,1088 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index &#8212; Tepkit Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=362bd888" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=a681ed88"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";import elkLayouts from "https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs";mermaid.registerLayoutLoaders(elkLayouts);mermaid.initialize({startOnLoad:false});</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";
+window.addEventListener("load", () => mermaid.run());
+</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Tepkit Documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tutorials/work_with_thirdorder.html">Work with thirdorder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/plotting.html">Plotting Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/custom_functions.html">How to Add Custom Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/adjust_cutoff_radius.html">Adjust cutoff radius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autoapi/tepkit/formulas/dp/index.html">Deformation Potential Theory</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">File API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="file/_overview.html">Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="file/vasp_file_classes.html">VASP File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/vasp/Eigenval.html">EIGENVAL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/vasp/Outcar.html">OUTCAR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/vasp/Poscar.html">POSCAR</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="file/boltztrap2_file_classes.html">BoltzTraP2 File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/boltztrap2/Condtens.html">interpolation.condtens</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="file/phonopy_file_classes.html">Phonopy File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/phonopy/force_constants/ForceConstants.html">FORCE_CONSTANTS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="file/shengbte_file_classes.html">ShengBTE File Classes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="autoapi/tepkit/core/index.html">tepkit.core</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/core/atom/index.html">tepkit.core.atom</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/core/atom/AtomicNumber.html">tepkit.core.atom.AtomicNumber</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/core/geometry/index.html">tepkit.core.geometry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/core/geometry/Point2D.html">tepkit.core.geometry.Point2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/core/geometry/Line2D.html">tepkit.core.geometry.Line2D</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/core/high_symmetry_points/index.html">tepkit.core.high_symmetry_points</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.html">tepkit.core.high_symmetry_points.HighSymmetryPoints2D</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.LatticeGammaException.html">tepkit.core.high_symmetry_points.HighSymmetryPoints2D.LatticeGammaException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.GammaAngleException.html">tepkit.core.high_symmetry_points.HighSymmetryPoints2D.GammaAngleException</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/core/structure/index.html">tepkit.core.structure</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/core/symmetry/index.html">tepkit.core.symmetry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/core/symmetry/Axis.html">tepkit.core.symmetry.Axis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/core/symmetry/BravaisSystem2D.html">tepkit.core.symmetry.BravaisSystem2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/core/symmetry/BravaisLattice2D.html">tepkit.core.symmetry.BravaisLattice2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/core/symmetry/CrystalSystem3D.html">tepkit.core.symmetry.CrystalSystem3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/core/symmetry/LayerGroup.html">tepkit.core.symmetry.LayerGroup</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/core/symmetry_data/index.html">tepkit.core.symmetry_data</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/core/vasp/index.html">tepkit.core.vasp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/core/vasp/VaspState.html">tepkit.core.vasp.VaspState</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="autoapi/tepkit/io/index.html">tepkit.io</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/io/boltztrap2/index.html">tepkit.io.boltztrap2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/boltztrap2/Condtens.html">tepkit.io.boltztrap2.Condtens</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/indices/index.html">tepkit.io.indices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/output/index.html">tepkit.io.output</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/io/phonopy/index.html">tepkit.io.phonopy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/phonopy/force_constants/index.html">tepkit.io.phonopy.force_constants</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/phonopy/force_constants/ForceConstants.html">tepkit.io.phonopy.force_constants.ForceConstants</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/phonopy/ForceConstants.html">tepkit.io.phonopy.ForceConstants</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/io/shengbte/index.html">tepkit.io.shengbte</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/Control.html">tepkit.io.shengbte.Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/SubdirFile.html">tepkit.io.shengbte.SubdirFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/OmegaShapedFile.html">tepkit.io.shengbte.OmegaShapedFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/OmegaLengthFile.html">tepkit.io.shengbte.OmegaLengthFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/OmegaParalleledFile.html">tepkit.io.shengbte.OmegaParalleledFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/NticksLengthFile.html">tepkit.io.shengbte.NticksLengthFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/TemperatureLengthFile.html">tepkit.io.shengbte.TemperatureLengthFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/CumulativeKappaTensor.html">tepkit.io.shengbte.CumulativeKappaTensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/CumulativeKappaVsOmegaTensor.html">tepkit.io.shengbte.CumulativeKappaVsOmegaTensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/KappaTensorVsT.html">tepkit.io.shengbte.KappaTensorVsT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/WP3.html">tepkit.io.shengbte.WP3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/Gruneisen.html">tepkit.io.shengbte.Gruneisen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/Omega.html">tepkit.io.shengbte.Omega</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/V.html">tepkit.io.shengbte.V</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/W.html">tepkit.io.shengbte.W</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/index.html">tepkit.io.vasp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/eigenval/index.html">tepkit.io.vasp.eigenval</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/eigenval/Eigenval.html">tepkit.io.vasp.eigenval.Eigenval</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/outcar/index.html">tepkit.io.vasp.outcar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/outcar/Outcar.html">tepkit.io.vasp.outcar.Outcar</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/poscar/index.html">tepkit.io.vasp.poscar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.html">tepkit.io.vasp.poscar.VaspCoordinatesMode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/poscar/Poscar.html">tepkit.io.vasp.poscar.Poscar</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/ExplicitKpoints.html">tepkit.io.vasp.ExplicitKpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/Ibzkpt.html">tepkit.io.vasp.Ibzkpt</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/Kpoints.html">tepkit.io.vasp.Kpoints</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/Kpoints.Mode.html">tepkit.io.vasp.Kpoints.Mode</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/Eigenval.html">tepkit.io.vasp.Eigenval</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/Outcar.html">tepkit.io.vasp.Outcar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/Poscar.html">tepkit.io.vasp.Poscar</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/File.html">tepkit.io.File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/TextFile.html">tepkit.io.TextFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/StructuredTextFile.html">tepkit.io.StructuredTextFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/TableTextFile.html">tepkit.io.TableTextFile</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="autoapi/tepkit/utils/index.html">tepkit.utils</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/utils/colors/index.html">tepkit.utils.colors</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/index.html">tepkit.utils.mpl_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/color_tools/index.html">tepkit.utils.mpl_tools.color_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/font_tools/index.html">tepkit.utils.mpl_tools.font_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/formatters/index.html">tepkit.utils.mpl_tools.formatters</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/index.html">tepkit.utils.mpl_tools.plotters</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.html">tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.html">tepkit.utils.mpl_tools.plotters.kpoints_plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/plotter/index.html">tepkit.utils.mpl_tools.plotters.plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/Plotter.html">tepkit.utils.mpl_tools.plotters.Plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.html">tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.html">tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html">tepkit.utils.mpl_tools.ticker_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/Figure.html">tepkit.utils.mpl_tools.Figure</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/utils/rich_tools/index.html">tepkit.utils.rich_tools</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/utils/typing_tools/index.html">tepkit.utils.typing_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/typing_tools/AutoClass.html">tepkit.utils.typing_tools.AutoClass</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="autoapi/tepkit/formulas/index.html">tepkit.formulas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/formulas/dp/index.html">tepkit.formulas.dp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/formulas/thermoelectric/index.html">tepkit.formulas.thermoelectric</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#X"><strong>X</strong></a>
+ | <a href="#Z"><strong>Z</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/core/structure/index.html#tepkit.core.structure.abc_to_xyz">abc_to_xyz() (in module tepkit.core.structure)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/index.html#tepkit.utils.mpl_tools.adjust_legend_linewidth">adjust_legend_linewidth() (in module tepkit.utils.mpl_tools)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/index.html#tepkit.io.array_to_string">array_to_string() (in module tepkit.io)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/formulas/dp/index.html#tepkit.formulas.dp.carrier_mobility_2d_i">carrier_mobility_2d_i() (in module tepkit.formulas.dp)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/formulas/dp/index.html#tepkit.formulas.dp.carrier_mobility_2d_v">carrier_mobility_2d_v() (in module tepkit.formulas.dp)</a>
+</li>
+      <li><a href="autoapi/tepkit/formulas/dp/index.html#tepkit.formulas.dp.carrier_mobility_3d_i">carrier_mobility_3d_i() (in module tepkit.formulas.dp)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/font_tools/index.html#tepkit.utils.mpl_tools.font_tools.get_avalible_font_by_names">get_avalible_font_by_names() (in module tepkit.utils.mpl_tools.font_tools)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/color_tools/index.html#tepkit.utils.mpl_tools.color_tools.get_color">get_color() (in module tepkit.utils.mpl_tools.color_tools)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/color_tools/index.html#tepkit.utils.mpl_tools.color_tools.get_colormap">get_colormap() (in module tepkit.utils.mpl_tools.color_tools)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/color_tools/index.html#tepkit.utils.mpl_tools.color_tools.get_colors">get_colors() (in module tepkit.utils.mpl_tools.color_tools)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/formatters/index.html#tepkit.utils.mpl_tools.formatters.get_decimal_formatter">get_decimal_formatter() (in module tepkit.utils.mpl_tools.formatters)</a>
+</li>
+      <li><a href="autoapi/tepkit/core/high_symmetry_points/index.html#tepkit.core.high_symmetry_points.get_high_symmetry_points_2d">get_high_symmetry_points_2d() (in module tepkit.core.high_symmetry_points)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/font_tools/index.html#tepkit.utils.mpl_tools.font_tools.get_recommended_font">get_recommended_font() (in module tepkit.utils.mpl_tools.font_tools)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/core/geometry/index.html#tepkit.core.geometry.intersection_point">intersection_point() (in module tepkit.core.geometry)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/font_tools/index.html#tepkit.utils.mpl_tools.font_tools.is_font_avalible">is_font_avalible() (in module tepkit.utils.mpl_tools.font_tools)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/io/index.html#tepkit.io.matrix_to_string">matrix_to_string() (in module tepkit.io)</a>
+</li>
+      <li>
+    module
+
+      <ul>
+        <li><a href="autoapi/tepkit/core/index.html#module-tepkit.core">tepkit.core</a>
+</li>
+        <li><a href="autoapi/tepkit/core/atom/index.html#module-tepkit.core.atom">tepkit.core.atom</a>
+</li>
+        <li><a href="autoapi/tepkit/core/geometry/index.html#module-tepkit.core.geometry">tepkit.core.geometry</a>
+</li>
+        <li><a href="autoapi/tepkit/core/high_symmetry_points/index.html#module-tepkit.core.high_symmetry_points">tepkit.core.high_symmetry_points</a>
+</li>
+        <li><a href="autoapi/tepkit/core/structure/index.html#module-tepkit.core.structure">tepkit.core.structure</a>
+</li>
+        <li><a href="autoapi/tepkit/core/symmetry/index.html#module-tepkit.core.symmetry">tepkit.core.symmetry</a>
+</li>
+        <li><a href="autoapi/tepkit/core/symmetry_data/index.html#module-tepkit.core.symmetry_data">tepkit.core.symmetry_data</a>
+</li>
+        <li><a href="autoapi/tepkit/core/vasp/index.html#module-tepkit.core.vasp">tepkit.core.vasp</a>
+</li>
+        <li><a href="autoapi/tepkit/formulas/index.html#module-tepkit.formulas">tepkit.formulas</a>
+</li>
+        <li><a href="autoapi/tepkit/formulas/dp/index.html#module-tepkit.formulas.dp">tepkit.formulas.dp</a>
+</li>
+        <li><a href="autoapi/tepkit/formulas/thermoelectric/index.html#module-tepkit.formulas.thermoelectric">tepkit.formulas.thermoelectric</a>
+</li>
+        <li><a href="autoapi/tepkit/io/index.html#module-tepkit.io">tepkit.io</a>
+</li>
+        <li><a href="autoapi/tepkit/io/boltztrap2/index.html#module-tepkit.io.boltztrap2">tepkit.io.boltztrap2</a>
+</li>
+        <li><a href="autoapi/tepkit/io/indices/index.html#module-tepkit.io.indices">tepkit.io.indices</a>
+</li>
+        <li><a href="autoapi/tepkit/io/output/index.html#module-tepkit.io.output">tepkit.io.output</a>
+</li>
+        <li><a href="autoapi/tepkit/io/phonopy/index.html#module-tepkit.io.phonopy">tepkit.io.phonopy</a>
+</li>
+        <li><a href="autoapi/tepkit/io/phonopy/force_constants/index.html#module-tepkit.io.phonopy.force_constants">tepkit.io.phonopy.force_constants</a>
+</li>
+        <li><a href="autoapi/tepkit/io/shengbte/index.html#module-tepkit.io.shengbte">tepkit.io.shengbte</a>
+</li>
+        <li><a href="autoapi/tepkit/io/vasp/index.html#module-tepkit.io.vasp">tepkit.io.vasp</a>
+</li>
+        <li><a href="autoapi/tepkit/io/vasp/eigenval/index.html#module-tepkit.io.vasp.eigenval">tepkit.io.vasp.eigenval</a>
+</li>
+        <li><a href="autoapi/tepkit/io/vasp/outcar/index.html#module-tepkit.io.vasp.outcar">tepkit.io.vasp.outcar</a>
+</li>
+        <li><a href="autoapi/tepkit/io/vasp/poscar/index.html#module-tepkit.io.vasp.poscar">tepkit.io.vasp.poscar</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/index.html#module-tepkit.utils">tepkit.utils</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/colors/index.html#module-tepkit.utils.colors">tepkit.utils.colors</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/index.html#module-tepkit.utils.mpl_tools">tepkit.utils.mpl_tools</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/color_tools/index.html#module-tepkit.utils.mpl_tools.color_tools">tepkit.utils.mpl_tools.color_tools</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/font_tools/index.html#module-tepkit.utils.mpl_tools.font_tools">tepkit.utils.mpl_tools.font_tools</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/formatters/index.html#module-tepkit.utils.mpl_tools.formatters">tepkit.utils.mpl_tools.formatters</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/index.html#module-tepkit.utils.mpl_tools.plotters">tepkit.utils.mpl_tools.plotters</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.html#module-tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter">tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.html#module-tepkit.utils.mpl_tools.plotters.kpoints_plotter">tepkit.utils.mpl_tools.plotters.kpoints_plotter</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/plotter/index.html#module-tepkit.utils.mpl_tools.plotters.plotter">tepkit.utils.mpl_tools.plotters.plotter</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html#module-tepkit.utils.mpl_tools.ticker_tools">tepkit.utils.mpl_tools.ticker_tools</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/rich_tools/index.html#module-tepkit.utils.rich_tools">tepkit.utils.rich_tools</a>
+</li>
+        <li><a href="autoapi/tepkit/utils/typing_tools/index.html#module-tepkit.utils.typing_tools">tepkit.utils.typing_tools</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/core/geometry/index.html#tepkit.core.geometry.perpendicular_bisector">perpendicular_bisector() (in module tepkit.core.geometry)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/rich_tools/index.html#tepkit.utils.rich_tools.print_args">print_args() (in module tepkit.utils.rich_tools)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/utils/rich_tools/index.html#tepkit.utils.rich_tools.print_panel">print_panel() (in module tepkit.utils.rich_tools)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/rich_tools/index.html#tepkit.utils.rich_tools.print_table">print_table() (in module tepkit.utils.rich_tools)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/formulas/dp/index.html#tepkit.formulas.dp.relaxtion_time">relaxtion_time() (in module tepkit.formulas.dp)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/core/geometry/index.html#tepkit.core.geometry.rotate_matrix_2d">rotate_matrix_2d() (in module tepkit.core.geometry)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/io/output/index.html#tepkit.io.output.save_df">save_df() (in module tepkit.io.output)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/index.html#tepkit.utils.mpl_tools.set_axes_ticker_formatter">set_axes_ticker_formatter() (in module tepkit.utils.mpl_tools)</a>
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html#tepkit.utils.mpl_tools.ticker_tools.set_axes_ticker_formatter">(in module tepkit.utils.mpl_tools.ticker_tools)</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/index.html#tepkit.utils.mpl_tools.set_axes_ticker_locator">set_axes_ticker_locator() (in module tepkit.utils.mpl_tools)</a>
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html#tepkit.utils.mpl_tools.ticker_tools.set_axes_ticker_locator">(in module tepkit.utils.mpl_tools.ticker_tools)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html#tepkit.utils.mpl_tools.ticker_tools.set_axis_ticker_formatter">set_axis_ticker_formatter() (in module tepkit.utils.mpl_tools.ticker_tools)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html#tepkit.utils.mpl_tools.ticker_tools.set_axis_ticker_locator">set_axis_ticker_locator() (in module tepkit.utils.mpl_tools.ticker_tools)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html#tepkit.utils.mpl_tools.ticker_tools.set_ticker_formatter">set_ticker_formatter() (in module tepkit.utils.mpl_tools.ticker_tools)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html#tepkit.utils.mpl_tools.ticker_tools.set_ticker_locator">set_ticker_locator() (in module tepkit.utils.mpl_tools.ticker_tools)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    tepkit.core
+
+      <ul>
+        <li><a href="autoapi/tepkit/core/index.html#module-tepkit.core">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.core.atom
+
+      <ul>
+        <li><a href="autoapi/tepkit/core/atom/index.html#module-tepkit.core.atom">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/core/atom/AtomicNumber.html#tepkit.core.atom.AtomicNumber">tepkit.core.atom.AtomicNumber (built-in class)</a>
+</li>
+      <li>
+    tepkit.core.geometry
+
+      <ul>
+        <li><a href="autoapi/tepkit/core/geometry/index.html#module-tepkit.core.geometry">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/core/geometry/Line2D.html#tepkit.core.geometry.Line2D">tepkit.core.geometry.Line2D (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/core/geometry/Point2D.html#tepkit.core.geometry.Point2D">tepkit.core.geometry.Point2D (built-in class)</a>
+</li>
+      <li>
+    tepkit.core.high_symmetry_points
+
+      <ul>
+        <li><a href="autoapi/tepkit/core/high_symmetry_points/index.html#module-tepkit.core.high_symmetry_points">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.html#tepkit.core.high_symmetry_points.HighSymmetryPoints2D">tepkit.core.high_symmetry_points.HighSymmetryPoints2D (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.GammaAngleException.html#tepkit.core.high_symmetry_points.HighSymmetryPoints2D.GammaAngleException">tepkit.core.high_symmetry_points.HighSymmetryPoints2D.GammaAngleException</a>
+</li>
+      <li><a href="autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.LatticeGammaException.html#tepkit.core.high_symmetry_points.HighSymmetryPoints2D.LatticeGammaException">tepkit.core.high_symmetry_points.HighSymmetryPoints2D.LatticeGammaException</a>
+</li>
+      <li>
+    tepkit.core.structure
+
+      <ul>
+        <li><a href="autoapi/tepkit/core/structure/index.html#module-tepkit.core.structure">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.core.symmetry
+
+      <ul>
+        <li><a href="autoapi/tepkit/core/symmetry/index.html#module-tepkit.core.symmetry">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/core/symmetry/Axis.html#tepkit.core.symmetry.Axis">tepkit.core.symmetry.Axis (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/core/symmetry/BravaisLattice2D.html#tepkit.core.symmetry.BravaisLattice2D">tepkit.core.symmetry.BravaisLattice2D (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/core/symmetry/BravaisSystem2D.html#tepkit.core.symmetry.BravaisSystem2D">tepkit.core.symmetry.BravaisSystem2D (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/core/symmetry/CrystalSystem3D.html#tepkit.core.symmetry.CrystalSystem3D">tepkit.core.symmetry.CrystalSystem3D (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/core/symmetry/LayerGroup.html#tepkit.core.symmetry.LayerGroup">tepkit.core.symmetry.LayerGroup (built-in class)</a>
+</li>
+      <li>
+    tepkit.core.symmetry_data
+
+      <ul>
+        <li><a href="autoapi/tepkit/core/symmetry_data/index.html#module-tepkit.core.symmetry_data">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.core.vasp
+
+      <ul>
+        <li><a href="autoapi/tepkit/core/vasp/index.html#module-tepkit.core.vasp">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/core/vasp/VaspState.html#tepkit.core.vasp.VaspState">tepkit.core.vasp.VaspState (built-in class)</a>
+</li>
+      <li>
+    tepkit.formulas
+
+      <ul>
+        <li><a href="autoapi/tepkit/formulas/index.html#module-tepkit.formulas">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.formulas.dp
+
+      <ul>
+        <li><a href="autoapi/tepkit/formulas/dp/index.html#module-tepkit.formulas.dp">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.formulas.thermoelectric
+
+      <ul>
+        <li><a href="autoapi/tepkit/formulas/thermoelectric/index.html#module-tepkit.formulas.thermoelectric">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.io
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/index.html#module-tepkit.io">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.io.boltztrap2
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/boltztrap2/index.html#module-tepkit.io.boltztrap2">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/io/boltztrap2/Condtens.html#tepkit.io.boltztrap2.Condtens">tepkit.io.boltztrap2.Condtens (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/File.html#tepkit.io.File">tepkit.io.File (built-in class)</a>
+</li>
+      <li>
+    tepkit.io.indices
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/indices/index.html#module-tepkit.io.indices">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.io.output
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/output/index.html#module-tepkit.io.output">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.io.phonopy
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/phonopy/index.html#module-tepkit.io.phonopy">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.io.phonopy.force_constants
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/phonopy/force_constants/index.html#module-tepkit.io.phonopy.force_constants">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/io/phonopy/force_constants/ForceConstants.html#tepkit.io.phonopy.force_constants.ForceConstants">tepkit.io.phonopy.force_constants.ForceConstants (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/phonopy/ForceConstants.html#tepkit.io.phonopy.ForceConstants">tepkit.io.phonopy.ForceConstants (built-in class)</a>
+</li>
+      <li>
+    tepkit.io.shengbte
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/shengbte/index.html#module-tepkit.io.shengbte">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/io/shengbte/Control.html#tepkit.io.shengbte.Control">tepkit.io.shengbte.Control (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/CumulativeKappaTensor.html#tepkit.io.shengbte.CumulativeKappaTensor">tepkit.io.shengbte.CumulativeKappaTensor (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/CumulativeKappaVsOmegaTensor.html#tepkit.io.shengbte.CumulativeKappaVsOmegaTensor">tepkit.io.shengbte.CumulativeKappaVsOmegaTensor (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/Gruneisen.html#tepkit.io.shengbte.Gruneisen">tepkit.io.shengbte.Gruneisen (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/KappaTensorVsT.html#tepkit.io.shengbte.KappaTensorVsT">tepkit.io.shengbte.KappaTensorVsT (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/NticksLengthFile.html#tepkit.io.shengbte.NticksLengthFile">tepkit.io.shengbte.NticksLengthFile (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/Omega.html#tepkit.io.shengbte.Omega">tepkit.io.shengbte.Omega (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/OmegaLengthFile.html#tepkit.io.shengbte.OmegaLengthFile">tepkit.io.shengbte.OmegaLengthFile (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/OmegaParalleledFile.html#tepkit.io.shengbte.OmegaParalleledFile">tepkit.io.shengbte.OmegaParalleledFile (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/OmegaShapedFile.html#tepkit.io.shengbte.OmegaShapedFile">tepkit.io.shengbte.OmegaShapedFile (built-in class)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/io/shengbte/SubdirFile.html#tepkit.io.shengbte.SubdirFile">tepkit.io.shengbte.SubdirFile (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/TemperatureLengthFile.html#tepkit.io.shengbte.TemperatureLengthFile">tepkit.io.shengbte.TemperatureLengthFile (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/V.html#tepkit.io.shengbte.V">tepkit.io.shengbte.V (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/W.html#tepkit.io.shengbte.W">tepkit.io.shengbte.W (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/shengbte/WP3.html#tepkit.io.shengbte.WP3">tepkit.io.shengbte.WP3 (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/StructuredTextFile.html#tepkit.io.StructuredTextFile">tepkit.io.StructuredTextFile (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/TableTextFile.html#tepkit.io.TableTextFile">tepkit.io.TableTextFile (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/TextFile.html#tepkit.io.TextFile">tepkit.io.TextFile (built-in class)</a>
+</li>
+      <li>
+    tepkit.io.vasp
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/vasp/index.html#module-tepkit.io.vasp">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.io.vasp.eigenval
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/vasp/eigenval/index.html#module-tepkit.io.vasp.eigenval">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/io/vasp/Eigenval.html#tepkit.io.vasp.Eigenval">tepkit.io.vasp.Eigenval (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/vasp/eigenval/Eigenval.html#tepkit.io.vasp.eigenval.Eigenval">tepkit.io.vasp.eigenval.Eigenval (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/vasp/ExplicitKpoints.html#tepkit.io.vasp.ExplicitKpoints">tepkit.io.vasp.ExplicitKpoints (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/vasp/Ibzkpt.html#tepkit.io.vasp.Ibzkpt">tepkit.io.vasp.Ibzkpt (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/vasp/Kpoints.html#tepkit.io.vasp.Kpoints">tepkit.io.vasp.Kpoints (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/vasp/Kpoints.Mode.html#tepkit.io.vasp.Kpoints.Mode">tepkit.io.vasp.Kpoints.Mode (built-in class)</a>
+</li>
+      <li>
+    tepkit.io.vasp.outcar
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/vasp/outcar/index.html#module-tepkit.io.vasp.outcar">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/io/vasp/Outcar.html#tepkit.io.vasp.Outcar">tepkit.io.vasp.Outcar (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/vasp/outcar/Outcar.html#tepkit.io.vasp.outcar.Outcar">tepkit.io.vasp.outcar.Outcar (built-in class)</a>
+</li>
+      <li>
+    tepkit.io.vasp.poscar
+
+      <ul>
+        <li><a href="autoapi/tepkit/io/vasp/poscar/index.html#module-tepkit.io.vasp.poscar">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/io/vasp/Poscar.html#tepkit.io.vasp.Poscar">tepkit.io.vasp.Poscar (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/vasp/poscar/Poscar.html#tepkit.io.vasp.poscar.Poscar">tepkit.io.vasp.poscar.Poscar (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.html#tepkit.io.vasp.poscar.VaspCoordinatesMode">tepkit.io.vasp.poscar.VaspCoordinatesMode (built-in class)</a>
+</li>
+      <li>
+    tepkit.utils
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/index.html#module-tepkit.utils">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.utils.colors
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/colors/index.html#module-tepkit.utils.colors">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.utils.mpl_tools
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/index.html#module-tepkit.utils.mpl_tools">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.utils.mpl_tools.color_tools
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/color_tools/index.html#module-tepkit.utils.mpl_tools.color_tools">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/Figure.html#tepkit.utils.mpl_tools.Figure">tepkit.utils.mpl_tools.Figure (built-in class)</a>
+</li>
+      <li>
+    tepkit.utils.mpl_tools.font_tools
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/font_tools/index.html#module-tepkit.utils.mpl_tools.font_tools">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.utils.mpl_tools.formatters
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/formatters/index.html#module-tepkit.utils.mpl_tools.formatters">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.utils.mpl_tools.plotters
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/index.html#module-tepkit.utils.mpl_tools.plotters">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.html#module-tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.html#tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter">tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.html#tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter">tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.html#tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter">tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter (built-in class)</a>
+</li>
+      <li>
+    tepkit.utils.mpl_tools.plotters.kpoints_plotter
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.html#module-tepkit.utils.mpl_tools.plotters.kpoints_plotter">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.html#tepkit.utils.mpl_tools.plotters.kpoints_plotter.ExplicitKpoints2DPlotter">tepkit.utils.mpl_tools.plotters.kpoints_plotter.ExplicitKpoints2DPlotter (built-in class)</a>
+</li>
+      <li>
+    tepkit.utils.mpl_tools.plotters.plotter
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/plotter/index.html#module-tepkit.utils.mpl_tools.plotters.plotter">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/Plotter.html#tepkit.utils.mpl_tools.plotters.Plotter">tepkit.utils.mpl_tools.plotters.Plotter (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/plotter/Plotter.html#tepkit.utils.mpl_tools.plotters.plotter.Plotter">tepkit.utils.mpl_tools.plotters.plotter.Plotter (built-in class)</a>
+</li>
+      <li>
+    tepkit.utils.mpl_tools.ticker_tools
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html#module-tepkit.utils.mpl_tools.ticker_tools">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.utils.rich_tools
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/rich_tools/index.html#module-tepkit.utils.rich_tools">module</a>
+</li>
+      </ul></li>
+      <li>
+    tepkit.utils.typing_tools
+
+      <ul>
+        <li><a href="autoapi/tepkit/utils/typing_tools/index.html#module-tepkit.utils.typing_tools">module</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/tepkit/utils/typing_tools/AutoClass.html#tepkit.utils.typing_tools.AutoClass">tepkit.utils.typing_tools.AutoClass (built-in class)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html#tepkit.utils.mpl_tools.ticker_tools.test">test() (in module tepkit.utils.mpl_tools.ticker_tools)</a>
+</li>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/color_tools/index.html#tepkit.utils.mpl_tools.color_tools.test1">test1() (in module tepkit.utils.mpl_tools.color_tools)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/utils/mpl_tools/plotters/plotter/index.html#tepkit.utils.mpl_tools.plotters.plotter.update_config">update_config() (in module tepkit.utils.mpl_tools.plotters.plotter)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="X">X</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/core/structure/index.html#tepkit.core.structure.xyz_to_abc">xyz_to_abc() (in module tepkit.core.structure)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="Z">Z</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/formulas/thermoelectric/index.html#tepkit.formulas.thermoelectric.z">z() (in module tepkit.formulas.thermoelectric)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/tepkit/formulas/thermoelectric/index.html#tepkit.formulas.thermoelectric.zt">zt() (in module tepkit.formulas.thermoelectric)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By TepLab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, TepLab.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

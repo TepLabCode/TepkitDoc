@@ -1,0 +1,693 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Work with thirdorder &#8212; Tepkit Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=362bd888" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=a681ed88"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/work_with_thirdorder';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Plotting Figures" href="plotting.html" />
+    <link rel="prev" title="Overview" href="../overview.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Tepkit Documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Work with thirdorder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_functions.html">How to Add Custom Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adjust_cutoff_radius.html">Adjust cutoff radius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autoapi/tepkit/formulas/dp/index.html">Deformation Potential Theory</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">File API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../file/_overview.html">Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../file/vasp_file_classes.html">VASP File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Eigenval.html">EIGENVAL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Outcar.html">OUTCAR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Poscar.html">POSCAR</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../file/boltztrap2_file_classes.html">BoltzTraP2 File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/boltztrap2/Condtens.html">interpolation.condtens</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../file/phonopy_file_classes.html">Phonopy File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/phonopy/force_constants/ForceConstants.html">FORCE_CONSTANTS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../file/shengbte_file_classes.html">ShengBTE File Classes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autoapi/tepkit/core/index.html">tepkit.core</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/atom/index.html">tepkit.core.atom</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/atom/AtomicNumber.html">tepkit.core.atom.AtomicNumber</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/geometry/index.html">tepkit.core.geometry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/geometry/Point2D.html">tepkit.core.geometry.Point2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/geometry/Line2D.html">tepkit.core.geometry.Line2D</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/high_symmetry_points/index.html">tepkit.core.high_symmetry_points</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.html">tepkit.core.high_symmetry_points.HighSymmetryPoints2D</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.LatticeGammaException.html">tepkit.core.high_symmetry_points.HighSymmetryPoints2D.LatticeGammaException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.GammaAngleException.html">tepkit.core.high_symmetry_points.HighSymmetryPoints2D.GammaAngleException</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/core/structure/index.html">tepkit.core.structure</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/index.html">tepkit.core.symmetry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/Axis.html">tepkit.core.symmetry.Axis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/BravaisSystem2D.html">tepkit.core.symmetry.BravaisSystem2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/BravaisLattice2D.html">tepkit.core.symmetry.BravaisLattice2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/CrystalSystem3D.html">tepkit.core.symmetry.CrystalSystem3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/LayerGroup.html">tepkit.core.symmetry.LayerGroup</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/core/symmetry_data/index.html">tepkit.core.symmetry_data</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/vasp/index.html">tepkit.core.vasp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/vasp/VaspState.html">tepkit.core.vasp.VaspState</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autoapi/tepkit/io/index.html">tepkit.io</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/io/boltztrap2/index.html">tepkit.io.boltztrap2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/boltztrap2/Condtens.html">tepkit.io.boltztrap2.Condtens</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/indices/index.html">tepkit.io.indices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/output/index.html">tepkit.io.output</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/io/phonopy/index.html">tepkit.io.phonopy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/io/phonopy/force_constants/index.html">tepkit.io.phonopy.force_constants</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/io/phonopy/force_constants/ForceConstants.html">tepkit.io.phonopy.force_constants.ForceConstants</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/phonopy/ForceConstants.html">tepkit.io.phonopy.ForceConstants</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/index.html">tepkit.io.shengbte</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/Control.html">tepkit.io.shengbte.Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/SubdirFile.html">tepkit.io.shengbte.SubdirFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/OmegaShapedFile.html">tepkit.io.shengbte.OmegaShapedFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/OmegaLengthFile.html">tepkit.io.shengbte.OmegaLengthFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/OmegaParalleledFile.html">tepkit.io.shengbte.OmegaParalleledFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/NticksLengthFile.html">tepkit.io.shengbte.NticksLengthFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/TemperatureLengthFile.html">tepkit.io.shengbte.TemperatureLengthFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/CumulativeKappaTensor.html">tepkit.io.shengbte.CumulativeKappaTensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/CumulativeKappaVsOmegaTensor.html">tepkit.io.shengbte.CumulativeKappaVsOmegaTensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/KappaTensorVsT.html">tepkit.io.shengbte.KappaTensorVsT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/WP3.html">tepkit.io.shengbte.WP3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/Gruneisen.html">tepkit.io.shengbte.Gruneisen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/Omega.html">tepkit.io.shengbte.Omega</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/V.html">tepkit.io.shengbte.V</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/W.html">tepkit.io.shengbte.W</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/io/vasp/index.html">tepkit.io.vasp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/io/vasp/eigenval/index.html">tepkit.io.vasp.eigenval</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/io/vasp/eigenval/Eigenval.html">tepkit.io.vasp.eigenval.Eigenval</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/io/vasp/outcar/index.html">tepkit.io.vasp.outcar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/io/vasp/outcar/Outcar.html">tepkit.io.vasp.outcar.Outcar</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/io/vasp/poscar/index.html">tepkit.io.vasp.poscar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.html">tepkit.io.vasp.poscar.VaspCoordinatesMode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/io/vasp/poscar/Poscar.html">tepkit.io.vasp.poscar.Poscar</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/ExplicitKpoints.html">tepkit.io.vasp.ExplicitKpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Ibzkpt.html">tepkit.io.vasp.Ibzkpt</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Kpoints.html">tepkit.io.vasp.Kpoints</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Kpoints.Mode.html">tepkit.io.vasp.Kpoints.Mode</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Eigenval.html">tepkit.io.vasp.Eigenval</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Outcar.html">tepkit.io.vasp.Outcar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Poscar.html">tepkit.io.vasp.Poscar</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/File.html">tepkit.io.File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/TextFile.html">tepkit.io.TextFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/StructuredTextFile.html">tepkit.io.StructuredTextFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/TableTextFile.html">tepkit.io.TableTextFile</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autoapi/tepkit/utils/index.html">tepkit.utils</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/utils/colors/index.html">tepkit.utils.colors</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/index.html">tepkit.utils.mpl_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/color_tools/index.html">tepkit.utils.mpl_tools.color_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/font_tools/index.html">tepkit.utils.mpl_tools.font_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/formatters/index.html">tepkit.utils.mpl_tools.formatters</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/index.html">tepkit.utils.mpl_tools.plotters</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.html">tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.html">tepkit.utils.mpl_tools.plotters.kpoints_plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/plotter/index.html">tepkit.utils.mpl_tools.plotters.plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/Plotter.html">tepkit.utils.mpl_tools.plotters.Plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.html">tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.html">tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html">tepkit.utils.mpl_tools.ticker_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/Figure.html">tepkit.utils.mpl_tools.Figure</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/utils/rich_tools/index.html">tepkit.utils.rich_tools</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/utils/typing_tools/index.html">tepkit.utils.typing_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/typing_tools/AutoClass.html">tepkit.utils.typing_tools.AutoClass</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autoapi/tepkit/formulas/index.html">tepkit.formulas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/formulas/dp/index.html">tepkit.formulas.dp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/formulas/thermoelectric/index.html">tepkit.formulas.thermoelectric</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/tutorials/work_with_thirdorder.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Work with thirdorder</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run">Run</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-generate-poscars">Step 1 - Generate Poscars</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-set-job-folders">Step 2 - Set Job Folders</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-check-duplicate-jobs">Step 3 - Check Duplicate Jobs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-jobs">Step 4 - Run Jobs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-get-results">Step 5 - Get Results</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="work-with-thirdorder">
+<h1>Work with thirdorder<a class="headerlink" href="#work-with-thirdorder" title="Link to this heading">#</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">thirdorder</span></code> was originally developed based on Python2.<br />
+Some of its contents have become less compatible with Python3.<br />
+<strong>Tepkit</strong> provides some ways to make thirdorder more suitable for the current environment.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
+<p>The original installation script (<code class="docutils literal notranslate"><span class="pre">setup.py</span></code>) of thirdorder needs the <code class="docutils literal notranslate"><span class="pre">distutils</span></code> package to work.
+However, <code class="docutils literal notranslate"><span class="pre">distutils</span></code> has been deprecated since Python 3.10 and been removed since Python 3.12. <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<p><strong>Tepkit</strong> provides a new <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> file which uses the more modern <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> package to compile and install the <code class="docutils literal notranslate"><span class="pre">thirdorder</span></code> package.<br />
+<strong>You can find the scripts at <code class="docutils literal notranslate"><span class="pre">Tepkit/tools/thirdorder_tools/*</span></code>.</strong></p>
+<p>In addition, our script can automatically obtain the pathes of the <code class="docutils literal notranslate"><span class="pre">spglib</span></code> libraries installed by python. You no longer need to find and fill the pathes in the script by yourself anymore.</p>
+<p>How to use the scripts:</p>
+<ol class="arabic simple">
+<li><p>Download the lastest released version of thirdorder from the <a class="reference external" href="https://bitbucket.org/sousaw/thirdorder/downloads/?tab=tags">release page</a>, and extract it. <strong>Or</strong> clone the repository (<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://bitbucket.org/sousaw/thirdorder.git</span></code>) to your local machine.</p></li>
+<li><p>Replace the original <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> and <code class="docutils literal notranslate"><span class="pre">cthirdorder_core.pxd</span></code> file with the ones by Tepkit.</p></li>
+<li><p>Install the required packages of thirdorder by the command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code>.</p></li>
+<li><p>Install thirdorder by the command <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">thirdorder</span></code> package will be installed as <code class="docutils literal notranslate"><span class="pre">thirdorder_core</span></code> in the python site-packages directory.</p></li>
+<li><p>Try the following code to test if the installation is successful.</p></li>
+</ol>
+<p><strong>For Windows:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">spglib</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">spglib_dll_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">spglib</span><span class="o">.</span><span class="vm">__file__</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">add_dll_directory</span><span class="p">(</span><span class="n">spglib_dll_dir</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">thirdorder_core</span>
+</pre></div>
+</div>
+<p><strong>For Linux:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">spglib</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">ctypes</span>
+<span class="n">libsymspg_so_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">spglib</span><span class="o">.</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;lib&quot;</span><span class="p">,</span> <span class="s2">&quot;libsymspg.so.2&quot;</span><span class="p">)</span>
+<span class="n">ctypes</span><span class="o">.</span><span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="n">libsymspg_so_path</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">thirdorder_core</span>
+</pre></div>
+</div>
+<p>You can also manually add the path of the required file <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> to the environment variables,</p>
+<p>For linux:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/path/to/spglib/lib:<span class="nv">$LD_LIBRARY_PATH</span>
+</pre></div>
+</div>
+<p>For Windows:</p>
+<ul class="simple">
+<li><p>TODO</p></li>
+</ul>
+<p>So that you can import thirdorder_core directly:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">thirdorder_core</span>
+</pre></div>
+</div>
+</section>
+<section id="run">
+<h2>Run<a class="headerlink" href="#run" title="Link to this heading">#</a></h2>
+<section id="step-1-generate-poscars">
+<h3>Step 1 - Generate Poscars<a class="headerlink" href="#step-1-generate-poscars" title="Link to this heading">#</a></h3>
+<p>Original command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>thirdorder_vasp.py<span class="w"> </span>sow<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>-3
+</pre></div>
+</div>
+<p>Tepkit command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tepkit<span class="w"> </span>thirdorder<span class="w"> </span>vasp_sow<span class="w"> </span>-a<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>-3
+</pre></div>
+</div>
+</section>
+<section id="step-2-set-job-folders">
+<h3>Step 2 - Set Job Folders<a class="headerlink" href="#step-2-set-job-folders" title="Link to this heading">#</a></h3>
+<p>Original command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">workdir</span><span class="o">=</span><span class="s2">&quot;./jobs&quot;</span>
+cp<span class="w"> </span>INCAR<span class="w"> </span>KPOINTS<span class="w"> </span>POTCAR<span class="w"> </span><span class="si">${</span><span class="nv">workdir</span><span class="si">}</span>
+<span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span>3RD.POSCAR.*
+<span class="k">do</span>
+<span class="w">    </span><span class="nv">d</span><span class="o">=</span><span class="si">${</span><span class="nv">workdir</span><span class="si">}</span>/job-<span class="si">${</span><span class="nv">i</span><span class="p">##*.</span><span class="si">}</span>
+<span class="w">    </span>mkdir<span class="w"> </span><span class="nv">$d</span>
+<span class="w">    </span>mv<span class="w"> </span><span class="nv">$i</span><span class="w"> </span><span class="nv">$d</span>/POSCAR
+<span class="w">    </span>ln<span class="w"> </span>-s<span class="w"> </span>../INCAR<span class="w"> </span>../KPOINTS<span class="w"> </span>../POTCAR<span class="w"> </span><span class="nv">$d</span>
+<span class="k">done</span>
+</pre></div>
+</div>
+<p>Tepkit command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tepkit<span class="w"> </span>thirdorder<span class="w"> </span>set_jobs<span class="w"> </span>--to<span class="w"> </span>./jobs
+</pre></div>
+</div>
+</section>
+<section id="step-3-check-duplicate-jobs">
+<h3>Step 3 - Check Duplicate Jobs<a class="headerlink" href="#step-3-check-duplicate-jobs" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="step-4-run-jobs">
+<h3>Step 4 - Run Jobs<a class="headerlink" href="#step-4-run-jobs" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="step-5-get-results">
+<h3>Step 5 - Get Results<a class="headerlink" href="#step-5-get-results" title="Link to this heading">#</a></h3>
+<p>Original command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>job*<span class="w"> </span>-name<span class="w"> </span>vasprun.xml<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w"> </span>python<span class="w"> </span>thirdorder_vasp.py<span class="w"> </span>reap<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>-3
+</pre></div>
+</div>
+<p>Tepkit command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tepkit<span class="w"> </span>thirdorder<span class="w"> </span>vasp_reap<span class="w"> </span>-a<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>-3<span class="w"> </span>--pattern<span class="w"> </span>job*
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://docs.python.org/3/library/distutils.html">distutils — Building and installing Python modules — Python 3.13.2 documentation</a></p>
+</aside>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>For Windows, it’s <code class="docutils literal notranslate"><span class="pre">symspg.dll</span></code>. For Linux, it’s <code class="docutils literal notranslate"><span class="pre">libsymspg.so.2</span></code>.</p>
+</aside>
+</aside>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../overview.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Overview</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="plotting.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Plotting Figures</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run">Run</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-generate-poscars">Step 1 - Generate Poscars</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-set-job-folders">Step 2 - Set Job Folders</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-check-duplicate-jobs">Step 3 - Check Duplicate Jobs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-jobs">Step 4 - Run Jobs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-get-results">Step 5 - Get Results</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By TepLab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, TepLab.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
