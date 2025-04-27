@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'overview';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Work with thirdorder" href="tutorials/work_with_thirdorder.html" />
+    <link rel="next" title="Installation" href="tutorials/installation.html" />
     <link rel="prev" title="Tepkit Documentation" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -148,6 +148,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tutorials/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/work_with_thirdorder.html">Work with thirdorder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/plotting.html">Plotting Figures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/custom_functions.html">How to Add Custom Functions</a></li>
@@ -445,14 +446,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionalities">Functionalities</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accelerate-anharmonic-ifcs-calculations">1. Accelerate anharmonic IFCs calculations</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-rms-of-the-second-order-ifcs">1.1. Calculate the RMS of the second-order IFCs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-the-cutoff-radius">1.2. Adjust the cutoff radius</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-cite">How To Cite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-name">About Name</a></li>
 </ul>
             </nav>
         </div>
@@ -466,34 +462,44 @@
                   
   <section id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h1>
-<section id="functionalities">
-<h2>Functionalities<a class="headerlink" href="#functionalities" title="Link to this heading">#</a></h2>
-<section id="accelerate-anharmonic-ifcs-calculations">
-<h3>1. Accelerate anharmonic IFCs calculations<a class="headerlink" href="#accelerate-anharmonic-ifcs-calculations" title="Link to this heading">#</a></h3>
-<section id="calculate-the-rms-of-the-second-order-ifcs">
-<h4>1.1. Calculate the RMS of the second-order IFCs<a class="headerlink" href="#calculate-the-rms-of-the-second-order-ifcs" title="Link to this heading">#</a></h4>
-<p>This function can be achieved by the command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tepkit</span> <span class="n">phonopy</span> <span class="n">rms</span>
-</pre></div>
-</div>
-<p>You can try it in these example folders:</p>
+<p><strong>Tepkit</strong> is a user-friendly program for accelerating
+the calculation and analysis processes of
+transport, electronic, and thermoelectric properties of materials.</p>
+<section id="how-to-cite">
+<h2>How To Cite<a class="headerlink" href="#how-to-cite" title="Link to this heading">#</a></h2>
+<p>If you have used phonopy in your work, please cite our paper
+which indeed helps the Tepkit project to continue:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Tepkit/examples/phonopy_rms*/</span></code>.</p></li>
+<li><p><em>In preparation</em></p></li>
 </ul>
+<blockquote>
+<div><p>✏️ Some examples described in the paper are available in the <code class="docutils literal notranslate"><span class="pre">examples/paper_examples</span></code> directory.</p>
+</div></blockquote>
 </section>
-<section id="adjust-the-cutoff-radius">
-<h4>1.2. Adjust the cutoff radius<a class="headerlink" href="#adjust-the-cutoff-radius" title="Link to this heading">#</a></h4>
-<p>This function can be achieved by the command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tepkit</span> <span class="n">phonopy</span> <span class="n">rms</span>
-</pre></div>
-</div>
-<p>You can try it in the example folders:</p>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
+<p>As of now, this package is only supported on <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">&gt;=</span> <span class="pre">3.11</span></code>.</p>
+<p>The following libraries are required to run basic functions and will be installed automatically:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Tepkit/examples/adjust_cutoff_thirdorder/</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Tepkit/examples/adjust_cutoff_fourthorder/</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">typer</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">docstring_parser</span></code> for Command-Line Interface (CLI)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">loguru</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">tqdm</span></code>for Logging</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">toml</span></code> for Configuration File</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numpy</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">scipy</span></code> for Mathmatical Calculations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas</span></code> for Table Data Handling</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> for Plotting</p></li>
 </ul>
+<blockquote>
+<div><p>⚠️ Some commands may require additional packages, if you get a <code class="docutils literal notranslate"><span class="pre">ModuleNotFoundError</span></code> while running,
+try to install it by pip and then re-run the command.</p>
+</div></blockquote>
 </section>
-</section>
+<section id="about-name">
+<h2>About Name<a class="headerlink" href="#about-name" title="Link to this heading">#</a></h2>
+<p><strong>Tepkit</strong> is a python package to assist with the first principles calculations.</p>
+<ul class="simple">
+<li><p>It is a <strong>T</strong>ransport and <strong>E</strong>lectronic <strong>P</strong>roperties Tool<strong>kit</strong>.</p></li>
+<li><p>It is also a <strong>T</strong>hermo<strong>E</strong>lectric <strong>P</strong>roperties Tool<strong>kit</strong>.</p></li>
+</ul>
 </section>
 </section>
 
@@ -518,11 +524,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="tutorials/work_with_thirdorder.html"
+       href="tutorials/installation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Work with thirdorder</p>
+        <p class="prev-next-title">Installation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -543,14 +549,9 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionalities">Functionalities</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accelerate-anharmonic-ifcs-calculations">1. Accelerate anharmonic IFCs calculations</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-rms-of-the-second-order-ifcs">1.1. Calculate the RMS of the second-order IFCs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-the-cutoff-radius">1.2. Adjust the cutoff radius</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-cite">How To Cite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-name">About Name</a></li>
 </ul>
   </nav></div>
 

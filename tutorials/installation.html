@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Adjust cutoff radius &#8212; Tepkit Documentation</title>
+    <title>Installation &#8212; Tepkit Documentation</title>
   
   
   
@@ -45,11 +45,11 @@
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/adjust_cutoff_radius';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/installation';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="tepkit.formulas.dp" href="../autoapi/tepkit/formulas/dp/index.html" />
-    <link rel="prev" title="How to Add Custom Functions" href="custom_functions.html" />
+    <link rel="next" title="Work with thirdorder" href="work_with_thirdorder.html" />
+    <link rel="prev" title="Overview" href="../overview.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -148,11 +148,11 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="work_with_thirdorder.html">Work with thirdorder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting Figures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_functions.html">How to Add Custom Functions</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Adjust cutoff radius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adjust_cutoff_radius.html">Adjust cutoff radius</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../autoapi/tepkit/formulas/dp/index.html">Deformation Potential Theory</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">File API</span></p>
@@ -360,7 +360,7 @@
       
       
       
-      <li><a href="../_sources/tutorials/adjust_cutoff_radius.md" target="_blank"
+      <li><a href="../_sources/tutorials/installation.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -423,7 +423,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -434,11 +436,26 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Adjust cutoff radius</h1>
+    <h1>Installation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-package">1. Download the package</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extract">2. Extract</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-create-conda-environment">3. (Optional) Create Conda Environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-tepkit">4. Install Tepkit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test">Test</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -448,64 +465,60 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="adjust-cutoff-radius">
-<h1>Adjust cutoff radius<a class="headerlink" href="#adjust-cutoff-radius" title="Link to this heading">#</a></h1>
-<p>First, you need to create two folder created under different cutoff radius, like:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cutoff-a-completed
-├── job-001
-│   ├── INCAR
-│   ├── KPOINTS
-│   ├── POSCAR
-│   ├── POTCAR
-│   ├── ...
-│   ├── OUTCAR
-│   └── vasprun.xml
-├── job-002
-├── job-003
-└── ...
-
-cutoff-b-new
-├── job-001
-│   ├── INCAR
-│   ├── KPOINTS
-│   ├── POSCAR
-│   └── POTCAR
-├── job-002
-├── job-003
-└── ...
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
+<section id="steps">
+<h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
+<section id="download-the-package">
+<h3>1. Download the package<a class="headerlink" href="#download-the-package" title="Link to this heading">#</a></h3>
+<p>Go to the <a class="reference external" href="https://github.com/TepLabCode/Tepkit/releases">releases page</a>, and download the latest release:</p>
+<p><code class="docutils literal notranslate"><span class="pre">tepkit-&lt;version&gt;.tar.gz</span></code></p>
+</section>
+<section id="extract">
+<h3>2. Extract<a class="headerlink" href="#extract" title="Link to this heading">#</a></h3>
+<p>Use the command or any other tool to extract the file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar<span class="w"> </span>-xvf<span class="w"> </span>tepkit-*.tar.gz
 </pre></div>
 </div>
-<p>Then, you can run the command <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">thirdorder</span> <span class="pre">adjust_cutoff</span></code> like below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tepkit<span class="w"> </span>thirdorder<span class="w"> </span>adjust_cutoff<span class="w"> </span>--old<span class="w"> </span><span class="s2">&quot;cutoff-a-completed&quot;</span><span class="w"> </span>--new<span class="w"> </span><span class="s2">&quot;cutoff-b-new&quot;</span>
+</section>
+<section id="optional-create-conda-environment">
+<h3>3. (Optional) Create Conda Environment<a class="headerlink" href="#optional-create-conda-environment" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>tepkit<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.11
+conda<span class="w"> </span>activate<span class="w"> </span>tepkit
 </pre></div>
 </div>
-<p>tepkit will check the POSCARs in their <code class="docutils literal notranslate"><span class="pre">job-*</span></code> dirs and copy the <code class="docutils literal notranslate"><span class="pre">vasprun.xml</span></code> from the old dir to new dir if they have identical <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code>, and write a <code class="docutils literal notranslate"><span class="pre">tepkit.skip.info.toml</span></code> file in the new dir to denote the duplicate jobs.</p>
-<ul>
-<li><p>if new cutoff is <strong>less than</strong> old cutoff, you can directly extract the FORCE_CONSTANTS file in the new dir.</p></li>
-<li><p>if new cutoff is <strong>greater than</strong> than old cutoff, you need to calculate those uncompleted jobs first.
-Here is an example script to skip those completed jobs:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
-
-<span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;cutoff-b-new&quot;</span>
-
-<span class="k">for</span><span class="w"> </span>dir<span class="w"> </span><span class="k">in</span><span class="w"> </span>job-*
-<span class="k">do</span>
-<span class="w">    </span><span class="nb">cd</span><span class="w"> </span><span class="si">${</span><span class="nv">dir</span><span class="si">}</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;tepkit.skip.info.toml&quot;</span><span class="w"> </span><span class="o">]</span>
-<span class="w">    </span><span class="k">then</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="k">$(</span>date<span class="k">)</span><span class="w"> </span><span class="si">${</span><span class="nv">dir</span><span class="si">}</span><span class="w"> </span><span class="s2">&quot;skipped.&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>../jobs.log
-<span class="w">    </span><span class="k">else</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="k">$(</span>date<span class="k">)</span><span class="w"> </span><span class="si">${</span><span class="nv">dir</span><span class="si">}</span><span class="w"> </span><span class="s2">&quot;started...&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>../jobs.log
-<span class="w">        </span>mpirun<span class="w"> </span>-np<span class="w"> </span><span class="m">8</span><span class="w"> </span>vasp_std<span class="w"> </span>&gt;<span class="w"> </span>vasp.log
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="k">$(</span>date<span class="k">)</span><span class="w"> </span><span class="si">${</span><span class="nv">dir</span><span class="si">}</span><span class="w"> </span><span class="s2">&quot;finished.&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>../jobs.log
-<span class="w">    </span><span class="k">fi</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;----------&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>../jobs.log
-<span class="w">    </span><span class="nb">cd</span><span class="w"> </span>..
-<span class="k">done</span>
+</section>
+<section id="install-tepkit">
+<h3>4. Install Tepkit<a class="headerlink" href="#install-tepkit" title="Link to this heading">#</a></h3>
+<p>Cheak your Python version by:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
+<span class="c1"># Python 3.11.x</span>
 </pre></div>
 </div>
-</li>
-</ul>
+<p>If your Python version is less than 3.11, and you do not want to change it, check step 3.</p>
+<p>Go to the extracted directory and install the package by pip:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>tepkit-*
+pip<span class="w"> </span>install<span class="w"> </span>.
+</pre></div>
+</div>
+</section>
+</section>
+<section id="test">
+<h2>Test<a class="headerlink" href="#test" title="Link to this heading">#</a></h2>
+<p>You can use Tepkit as a command-line interface (CLI) in the console.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit
+</pre></div>
+</div>
+<p>If you installed Tepkit in conda:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>conda<span class="w"> </span>activate<span class="w"> </span>tepkit
+&gt;<span class="w"> </span>tepkit
+</pre></div>
+</div>
+<p>Or you can use Tepkit as a Python module:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tepkit</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -520,20 +533,20 @@ Here is an example script to skip those completed jobs:</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="custom_functions.html"
+       href="../overview.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">How to Add Custom Functions</p>
+        <p class="prev-next-title">Overview</p>
       </div>
     </a>
     <a class="right-next"
-       href="../autoapi/tepkit/formulas/dp/index.html"
+       href="work_with_thirdorder.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">tepkit.formulas.dp</p>
+        <p class="prev-next-title">Work with thirdorder</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -543,6 +556,29 @@ Here is an example script to skip those completed jobs:</p>
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-package">1. Download the package</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extract">2. Extract</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-create-conda-environment">3. (Optional) Create Conda Environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-tepkit">4. Install Tepkit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test">Test</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

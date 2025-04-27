@@ -104,7 +104,9 @@ tepkit thirdorder set_jobs --to ./jobs
 
 ### Step 3 - Check Duplicate Jobs
 
-TODO
+```bash
+tepkit thirdorder check_dupl --dir jobs
+```
 
 ### Step 4 - Run Jobs
 

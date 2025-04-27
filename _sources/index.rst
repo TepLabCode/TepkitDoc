@@ -21,6 +21,7 @@ Tepkit Documentation
    :maxdepth: 1
    :caption: Tutorials
 
+   Installation                  <tutorials/installation>
    Work with thirdorder          <tutorials/work_with_thirdorder>
    Plotting Figures              <tutorials/plotting>
    How to Add Custom Functions   <tutorials/custom_functions>
