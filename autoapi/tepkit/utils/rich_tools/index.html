@@ -33,7 +33,7 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=4ae1632d" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=362bd888" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=2c9eff3a" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'autoapi/tepkit/utils/rich_tools/index';</script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="tepkit.utils.typing_tools" href="../typing_tools/index.html" />
+    <link rel="next" title="tepkit.utils.rich_tools.TablePrinter" href="TablePrinter.html" />
     <link rel="prev" title="tepkit.utils.mpl_tools.Figure" href="../mpl_tools/Figure.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -169,7 +169,7 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../../file/phonopy_file_classes.html">Phonopy File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../io/phonopy/force_constants/ForceConstants.html">FORCE_CONSTANTS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../io/phonopy/ForceConstants.html">FORCE_CONSTANTS</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../file/shengbte_file_classes.html">ShengBTE File Classes</a></li>
@@ -219,10 +219,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../io/indices/index.html">tepkit.io.indices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../io/output/index.html">tepkit.io.output</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../io/phonopy/index.html">tepkit.io.phonopy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../io/phonopy/force_constants/index.html">tepkit.io.phonopy.force_constants</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../io/phonopy/force_constants/ForceConstants.html">tepkit.io.phonopy.force_constants.ForceConstants</a></li>
-</ul>
-</details></li>
 <li class="toctree-l3"><a class="reference internal" href="../../io/phonopy/ForceConstants.html">tepkit.io.phonopy.ForceConstants</a></li>
 </ul>
 </details></li>
@@ -242,31 +238,20 @@
 <li class="toctree-l3"><a class="reference internal" href="../../io/shengbte/Omega.html">tepkit.io.shengbte.Omega</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../io/shengbte/V.html">tepkit.io.shengbte.V</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../io/shengbte/W.html">tepkit.io.shengbte.W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../io/shengbte/ForceConstants3rd.html">tepkit.io.shengbte.ForceConstants3rd</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../io/vasp/index.html">tepkit.io.vasp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../io/vasp/eigenval/index.html">tepkit.io.vasp.eigenval</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../io/vasp/eigenval/Eigenval.html">tepkit.io.vasp.eigenval.Eigenval</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../io/vasp/outcar/index.html">tepkit.io.vasp.outcar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../io/vasp/outcar/Outcar.html">tepkit.io.vasp.outcar.Outcar</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../io/vasp/poscar/index.html">tepkit.io.vasp.poscar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../io/vasp/poscar/VaspCoordinatesMode.html">tepkit.io.vasp.poscar.VaspCoordinatesMode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../io/vasp/poscar/Poscar.html">tepkit.io.vasp.poscar.Poscar</a></li>
-</ul>
-</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../io/vasp/Eigenval.html">tepkit.io.vasp.Eigenval</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../io/vasp/ExplicitKpoints.html">tepkit.io.vasp.ExplicitKpoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../io/vasp/Ibzkpt.html">tepkit.io.vasp.Ibzkpt</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../io/vasp/Kpoints.html">tepkit.io.vasp.Kpoints</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../io/vasp/Kpoints.Mode.html">tepkit.io.vasp.Kpoints.Mode</a></li>
 </ul>
 </details></li>
-<li class="toctree-l3"><a class="reference internal" href="../../io/vasp/Eigenval.html">tepkit.io.vasp.Eigenval</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../io/vasp/Outcar.html">tepkit.io.vasp.Outcar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../io/vasp/Poscar.html">tepkit.io.vasp.Poscar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../io/vasp/VaspCoordinatesMode.html">tepkit.io.vasp.VaspCoordinatesMode</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../../io/File.html">tepkit.io.File</a></li>
@@ -282,9 +267,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../mpl_tools/font_tools/index.html">tepkit.utils.mpl_tools.font_tools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mpl_tools/formatters/index.html">tepkit.utils.mpl_tools.formatters</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../mpl_tools/plotters/index.html">tepkit.utils.mpl_tools.plotters</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../mpl_tools/plotters/brillouin_zone_plotter/index.html">tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../mpl_tools/plotters/kpoints_plotter/index.html">tepkit.utils.mpl_tools.plotters.kpoints_plotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../mpl_tools/plotters/plotter/index.html">tepkit.utils.mpl_tools.plotters.plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mpl_tools/plotters/rms_plotter/index.html">tepkit.utils.mpl_tools.plotters.rms_plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mpl_tools/plotters/BasePlotter.html">tepkit.utils.mpl_tools.plotters.BasePlotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../mpl_tools/plotters/Plotter.html">tepkit.utils.mpl_tools.plotters.Plotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../mpl_tools/plotters/BrillouinZone2DPlotter.html">tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../mpl_tools/plotters/ExplicitKpoints2DPlotter.html">tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter</a></li>
@@ -294,7 +280,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../mpl_tools/Figure.html">tepkit.utils.mpl_tools.Figure</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">tepkit.utils.rich_tools</a></li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">tepkit.utils.rich_tools</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="TablePrinter.html">tepkit.utils.rich_tools.TablePrinter</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../typing_tools/index.html">tepkit.utils.typing_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../typing_tools/AutoClass.html">tepkit.utils.typing_tools.AutoClass</a></li>
 </ul>
@@ -447,6 +436,7 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tepkit.utils.rich_tools.print_panel"><code class="docutils literal notranslate"><span class="pre">print_panel()</span></code></a></li>
@@ -478,6 +468,19 @@
 </table>
 </div>
 </section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="TablePrinter.html#tepkit.utils.rich_tools.TablePrinter" title="tepkit.utils.rich_tools.TablePrinter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TablePrinter</span></code></a></p></td>
+<td><p>A class wapper for print_table function, avoiding pass the same arguments repeatedly.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
@@ -486,7 +489,7 @@
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#tepkit.utils.rich_tools.print_table" title="tepkit.utils.rich_tools.print_table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">print_table</span></code></a>(→ rich.table.Table)</p></td>
-<td><p></p></td>
+<td><p>A function to easily print a dict as a Rich table.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#tepkit.utils.rich_tools.print_args" title="tepkit.utils.rich_tools.print_args"><code class="xref py py-obj docutils literal notranslate"><span class="pre">print_args</span></code></a>(→ rich.table.Table)</p></td>
 <td><p></p></td>
@@ -509,8 +512,25 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tepkit.utils.rich_tools.print_table">
-<span class="sig-name descname"><span class="pre">print_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dictionary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Keys'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Values'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rich.table.Table</span></span></span><a class="headerlink" href="#tepkit.utils.rich_tools.print_table" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">print_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dictionary</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Keys'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Values'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rich.table.Table</span></span></span><a class="headerlink" href="#tepkit.utils.rich_tools.print_table" title="Link to this definition">#</a></dt>
+<dd><p>A function to easily print a dict as a Rich table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dictionary</strong></p></li>
+<li><p><strong>title</strong></p></li>
+<li><p><strong>key</strong></p></li>
+<li><p><strong>value</strong></p></li>
+<li><p><strong>table_options</strong></p></li>
+<li><p><strong>key_options</strong></p></li>
+<li><p><strong>value_options</strong></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tepkit.utils.rich_tools.print_args">
@@ -541,11 +561,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="../typing_tools/index.html"
+       href="TablePrinter.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">tepkit.utils.typing_tools</p>
+        <p class="prev-next-title">tepkit.utils.rich_tools.TablePrinter</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -567,6 +587,7 @@
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tepkit.utils.rich_tools.print_panel"><code class="docutils literal notranslate"><span class="pre">print_panel()</span></code></a></li>
@@ -598,7 +619,7 @@ By TepLab
 
   <p class="copyright">
     
-      © Copyright 2024, TepLab.
+      © Copyright 2024–2025, TepLab.
       <br/>
     
   </p>

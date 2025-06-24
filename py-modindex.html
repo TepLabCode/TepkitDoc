@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
-    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=362bd888" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=2c9eff3a" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -179,7 +179,7 @@ window.addEventListener("load", () => mermaid.run());
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="file/phonopy_file_classes.html">Phonopy File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/phonopy/force_constants/ForceConstants.html">FORCE_CONSTANTS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/phonopy/ForceConstants.html">FORCE_CONSTANTS</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="file/shengbte_file_classes.html">ShengBTE File Classes</a></li>
@@ -229,10 +229,6 @@ window.addEventListener("load", () => mermaid.run());
 <li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/indices/index.html">tepkit.io.indices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/output/index.html">tepkit.io.output</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/io/phonopy/index.html">tepkit.io.phonopy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/phonopy/force_constants/index.html">tepkit.io.phonopy.force_constants</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/phonopy/force_constants/ForceConstants.html">tepkit.io.phonopy.force_constants.ForceConstants</a></li>
-</ul>
-</details></li>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/phonopy/ForceConstants.html">tepkit.io.phonopy.ForceConstants</a></li>
 </ul>
 </details></li>
@@ -252,31 +248,20 @@ window.addEventListener("load", () => mermaid.run());
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/Omega.html">tepkit.io.shengbte.Omega</a></li>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/V.html">tepkit.io.shengbte.V</a></li>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/W.html">tepkit.io.shengbte.W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/shengbte/ForceConstants3rd.html">tepkit.io.shengbte.ForceConstants3rd</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/index.html">tepkit.io.vasp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/eigenval/index.html">tepkit.io.vasp.eigenval</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/eigenval/Eigenval.html">tepkit.io.vasp.eigenval.Eigenval</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/outcar/index.html">tepkit.io.vasp.outcar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/outcar/Outcar.html">tepkit.io.vasp.outcar.Outcar</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/poscar/index.html">tepkit.io.vasp.poscar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.html">tepkit.io.vasp.poscar.VaspCoordinatesMode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/poscar/Poscar.html">tepkit.io.vasp.poscar.Poscar</a></li>
-</ul>
-</details></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/Eigenval.html">tepkit.io.vasp.Eigenval</a></li>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/ExplicitKpoints.html">tepkit.io.vasp.ExplicitKpoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/Ibzkpt.html">tepkit.io.vasp.Ibzkpt</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/io/vasp/Kpoints.html">tepkit.io.vasp.Kpoints</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/io/vasp/Kpoints.Mode.html">tepkit.io.vasp.Kpoints.Mode</a></li>
 </ul>
 </details></li>
-<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/Eigenval.html">tepkit.io.vasp.Eigenval</a></li>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/Outcar.html">tepkit.io.vasp.Outcar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/Poscar.html">tepkit.io.vasp.Poscar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/io/vasp/VaspCoordinatesMode.html">tepkit.io.vasp.VaspCoordinatesMode</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/io/File.html">tepkit.io.File</a></li>
@@ -292,9 +277,10 @@ window.addEventListener("load", () => mermaid.run());
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/font_tools/index.html">tepkit.utils.mpl_tools.font_tools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/formatters/index.html">tepkit.utils.mpl_tools.formatters</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/index.html">tepkit.utils.mpl_tools.plotters</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.html">tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.html">tepkit.utils.mpl_tools.plotters.kpoints_plotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/plotter/index.html">tepkit.utils.mpl_tools.plotters.plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/rms_plotter/index.html">tepkit.utils.mpl_tools.plotters.rms_plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/BasePlotter.html">tepkit.utils.mpl_tools.plotters.BasePlotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/Plotter.html">tepkit.utils.mpl_tools.plotters.Plotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.html">tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.html">tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter</a></li>
@@ -304,7 +290,10 @@ window.addEventListener("load", () => mermaid.run());
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/mpl_tools/Figure.html">tepkit.utils.mpl_tools.Figure</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2"><a class="reference internal" href="autoapi/tepkit/utils/rich_tools/index.html">tepkit.utils.rich_tools</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/utils/rich_tools/index.html">tepkit.utils.rich_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/rich_tools/TablePrinter.html">tepkit.utils.rich_tools.TablePrinter</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/tepkit/utils/typing_tools/index.html">tepkit.utils.typing_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/tepkit/utils/typing_tools/AutoClass.html">tepkit.utils.typing_tools.AutoClass</a></li>
 </ul>
@@ -510,32 +499,12 @@ window.addEventListener("load", () => mermaid.run());
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
-       <a href="autoapi/tepkit/io/phonopy/force_constants/index.html#module-tepkit.io.phonopy.force_constants"><code class="xref">tepkit.io.phonopy.force_constants</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
        <a href="autoapi/tepkit/io/shengbte/index.html#module-tepkit.io.shengbte"><code class="xref">tepkit.io.shengbte</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
        <a href="autoapi/tepkit/io/vasp/index.html#module-tepkit.io.vasp"><code class="xref">tepkit.io.vasp</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="autoapi/tepkit/io/vasp/eigenval/index.html#module-tepkit.io.vasp.eigenval"><code class="xref">tepkit.io.vasp.eigenval</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="autoapi/tepkit/io/vasp/outcar/index.html#module-tepkit.io.vasp.outcar"><code class="xref">tepkit.io.vasp.outcar</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="autoapi/tepkit/io/vasp/poscar/index.html#module-tepkit.io.vasp.poscar"><code class="xref">tepkit.io.vasp.poscar</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
@@ -575,17 +544,17 @@ window.addEventListener("load", () => mermaid.run());
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
-       <a href="autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.html#module-tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter"><code class="xref">tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
        <a href="autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.html#module-tepkit.utils.mpl_tools.plotters.kpoints_plotter"><code class="xref">tepkit.utils.mpl_tools.plotters.kpoints_plotter</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
        <a href="autoapi/tepkit/utils/mpl_tools/plotters/plotter/index.html#module-tepkit.utils.mpl_tools.plotters.plotter"><code class="xref">tepkit.utils.mpl_tools.plotters.plotter</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="autoapi/tepkit/utils/mpl_tools/plotters/rms_plotter/index.html#module-tepkit.utils.mpl_tools.plotters.rms_plotter"><code class="xref">tepkit.utils.mpl_tools.plotters.rms_plotter</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
@@ -641,7 +610,7 @@ By TepLab
 
   <p class="copyright">
     
-      © Copyright 2024, TepLab.
+      © Copyright 2024–2025, TepLab.
       <br/>
     
   </p>

@@ -22,6 +22,8 @@ tepkit.core.atom.AtomicNumber
    >>> int('0b100', base=0)
    4
 
+   Initialize self.  See help(type(self)) for accurate signature.
+
 
 
 Attributes

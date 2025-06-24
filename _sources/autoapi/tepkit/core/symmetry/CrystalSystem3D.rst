@@ -7,7 +7,9 @@ tepkit.core.symmetry.CrystalSystem3D
 
 
 
-   Enum where members are also (and must be) strings
+   The string enum class for 3D Crystal System.
+
+   Initialize self.  See help(type(self)) for accurate signature.
 
 
 

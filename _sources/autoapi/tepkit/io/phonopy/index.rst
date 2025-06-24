@@ -4,15 +4,6 @@ tepkit.io.phonopy
 .. py:module:: tepkit.io.phonopy
 
 
-Submodules
-----------
-
-.. toctree::
-   :maxdepth: 1
-
-   /autoapi/tepkit/io/phonopy/force_constants/index
-
-
 Classes
 -------
 

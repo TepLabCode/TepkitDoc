@@ -61,6 +61,7 @@ All Members
 
 .. py:attribute:: df
    :no-index:
+   :type:  pandas.DataFrame | None
    :value: None
 
 

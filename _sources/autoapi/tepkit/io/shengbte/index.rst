@@ -25,6 +25,7 @@ Classes
    /autoapi/tepkit/io/shengbte/Omega
    /autoapi/tepkit/io/shengbte/V
    /autoapi/tepkit/io/shengbte/W
+   /autoapi/tepkit/io/shengbte/ForceConstants3rd
 
 .. autoapisummary::
 
@@ -43,5 +44,6 @@ Classes
    tepkit.io.shengbte.Omega
    tepkit.io.shengbte.V
    tepkit.io.shengbte.W
+   tepkit.io.shengbte.ForceConstants3rd
 
 

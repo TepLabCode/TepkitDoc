@@ -31,6 +31,7 @@ Methods
 .. autoapisummary::
 
    tepkit.io.phonopy.ForceConstants.from_string
+   tepkit.io.phonopy.ForceConstants.calculate_rms
 
 
 
@@ -60,6 +61,11 @@ All Members
 
 
    Parse the string to structured data.
+
+
+
+.. py:method:: calculate_rms() -> pandas.DataFrame
+   :no-index:
 
 
 

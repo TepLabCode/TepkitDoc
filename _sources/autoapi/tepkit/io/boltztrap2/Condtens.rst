@@ -22,6 +22,7 @@ Attributes
    "``column_indices``", "``None``", ""
    "``default_from_file_config``", "``None``", ""
    "``label_texts``", "``None``", "You can change it to determine how to display the axis label."
+   "``df``", "``None``", ""
    "``column_indices_dict``", "``None``", ""
 
 
@@ -79,6 +80,12 @@ All Members
 
 
    You can change it to determine how to display the axis label.
+
+
+
+.. py:attribute:: df
+   :no-index:
+   :type:  pandas.DataFrame
 
 
 

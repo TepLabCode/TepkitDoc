@@ -73,7 +73,7 @@ Package Contents
    :value: Self
 
 
-.. py:function:: array_to_string(array, fmt='% f', delimiter=' ', prefix='', suffix='') -> str
+.. py:function:: array_to_string(array: list, fmt='% f', delimiter=' ', prefix='', suffix='') -> str
 
 .. py:function:: matrix_to_string(matrix, fmt='% f', delimiter=' ', line_prefix='', line_separator='\n', line_suffix='', prefix='', suffix='') -> str
 

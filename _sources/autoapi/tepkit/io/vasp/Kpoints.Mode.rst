@@ -9,6 +9,8 @@ tepkit.io.vasp.Kpoints.Mode
 
    The Enum of all supported KPOINTS modes
 
+   Initialize self.  See help(type(self)) for accurate signature.
+
 
 
 Attributes

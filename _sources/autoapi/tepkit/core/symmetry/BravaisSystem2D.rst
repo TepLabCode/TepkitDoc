@@ -7,7 +7,16 @@ tepkit.core.symmetry.BravaisSystem2D
 
 
 
-   Enum where members are also (and must be) strings
+   The string enum class for 2D Bravais System.
+
+   **Reference:**
+
+   - | International Tables for Crystallography, Vol. E Subperiodic groups
+     | —— Kopský, V. (Editor)
+     | *Kluwer Academic*, Dordrecht, **2002**.
+     | | > Page 6, Table 1.2.1.1
+
+   Initialize self.  See help(type(self)) for accurate signature.
 
 
 

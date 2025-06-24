@@ -10,10 +10,12 @@ Classes
 .. toctree::
    :hidden:
 
+   /autoapi/tepkit/utils/mpl_tools/plotters/plotter/BasePlotter
    /autoapi/tepkit/utils/mpl_tools/plotters/plotter/Plotter
 
 .. autoapisummary::
 
+   tepkit.utils.mpl_tools.plotters.plotter.BasePlotter
    tepkit.utils.mpl_tools.plotters.plotter.Plotter
 
 
@@ -30,6 +32,7 @@ Module Contents
 
 .. py:function:: update_config(dict1: dict, dict2: dict)
 
-   将 dict2 合并到 dict1 中
+   Merge dict2 into dict1. All keys in dict2 must exist in dict1.
+   If the corresponding values are both dictionaries, merge them recursively.
 
 

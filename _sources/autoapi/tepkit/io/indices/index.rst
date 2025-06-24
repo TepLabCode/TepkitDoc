@@ -3,6 +3,11 @@ tepkit.io.indices
 
 .. py:module:: tepkit.io.indices
 
+.. autoapi-nested-parse::
+
+   This module contains constants for the different types of tensor indices used in Tepkit.
+
+
 
 Attributes
 ----------
@@ -14,6 +19,7 @@ Attributes
    tepkit.io.indices.VECTOR3D_INDICES
    tepkit.io.indices.TENSOR2D_ORDER2_INDICES
    tepkit.io.indices.TENSOR3D_ORDER2_INDICES
+   tepkit.io.indices.TENSOR3D_ORDER3_INDICES
    tepkit.io.indices.VOIGT_NOTATION_2X2
    tepkit.io.indices.VOIGT_NOTATION_3X3
    tepkit.io.indices.V3D_INDICES
@@ -46,6 +52,11 @@ Module Contents
 .. py:data:: TENSOR3D_ORDER2_INDICES
    :no-index:
    :value: ['xx', 'xy', 'xz', 'yx', 'yy', 'yz', 'zx', 'zy', 'zz']
+
+
+.. py:data:: TENSOR3D_ORDER3_INDICES
+   :no-index:
+   :value: ['xxx', 'xxy', 'xxz', 'xyx', 'xyy', 'xyz', 'xzx', 'xzy', 'xzz', 'yxx', 'yxy', 'yxz', 'yyx',...
 
 
 .. py:data:: VOIGT_NOTATION_2X2

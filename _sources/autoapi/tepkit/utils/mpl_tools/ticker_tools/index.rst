@@ -49,6 +49,7 @@ Module Contents
    Set the ticker locator of the given axes (ax).
    Usage:
    >>> set_axes_ticker_locator(ax, "x", "auto")
+   >>> set_axes_ticker_locator(ax, "x", "gap", 10)
    >>> set_axes_ticker_locator(ax, "y", "log", {"base": 10})
 
 

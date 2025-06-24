@@ -13,6 +13,7 @@ Attributes
    tepkit.utils.typing_tools.PathLike
    tepkit.utils.typing_tools.DataType
    tepkit.utils.typing_tools.NumpyArray
+   tepkit.utils.typing_tools.NumpyArray3
    tepkit.utils.typing_tools.NumpyArray2D
    tepkit.utils.typing_tools.NumpyArray3x3
    tepkit.utils.typing_tools.NumpyArrayNx3
@@ -54,6 +55,12 @@ Module Contents
    :no-index:
    :type:  TypeAlias
    :value: np.ndarray[Any, np.dtype[DataType]]
+
+
+.. py:data:: NumpyArray3
+   :no-index:
+   :type:  TypeAlias
+   :value: np.ndarray[(Literal[3], ), np.dtype[DataType]]
 
 
 .. py:data:: NumpyArray2D

@@ -4,6 +4,9 @@ tepkit.core.symmetry.LayerGroup
 .. py:class:: tepkit.core.symmetry.LayerGroup
 
 
+   The class for layer group analysis.
+
+
 
 Attributes
 ----------

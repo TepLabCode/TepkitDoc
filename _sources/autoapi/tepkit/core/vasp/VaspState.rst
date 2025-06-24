@@ -9,6 +9,8 @@ tepkit.core.vasp.VaspState
 
    VASP State Enum.
 
+   Initialize self.  See help(type(self)) for accurate signature.
+
 
 
 Attributes

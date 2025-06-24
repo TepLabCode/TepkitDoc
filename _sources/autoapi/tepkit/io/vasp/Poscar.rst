@@ -20,12 +20,10 @@ Attributes
    "``default_file_name``", "``'POSCAR'``", "The default name of file when use ``from_dir()`` ."
    "``comment``", "``'POSCAR'``", "The first line of POSCAR."
    "``scaling_factor``", "``1.0``", ""
-   "``unscale_lattice``", "``None``", ""
    "``has_species_names``", "``True``", ""
-   "``species_names``", "``[]``", ""
-   "``ions_per_species``", "``[]``", ""
+   "``species_names``", "``['Unknown']``", ""
+   "``ions_per_species``", "``[1]``", ""
    "``ion_coordinates_mode``", "``None``", ""
-   "``ion_positions``", "``None``", ""
    "``has_selective_dynamics``", "``False``", ""
    "``selective_dynamics``", "``None``", ""
    "``has_lattice_velocities``", "``False``", ""
@@ -40,9 +38,13 @@ Properties
 
 .. autoapisummary::
 
+   tepkit.io.vasp.Poscar.unscale_lattice
+   tepkit.io.vasp.Poscar.ion_positions
    tepkit.io.vasp.Poscar.lattice
    tepkit.io.vasp.Poscar.reciprocal_lattice
    tepkit.io.vasp.Poscar.n_ions
+   tepkit.io.vasp.Poscar.species_index_per_ion
+   tepkit.io.vasp.Poscar.species_name_per_ion
    tepkit.io.vasp.Poscar.thickness_info
 
 
@@ -58,6 +60,7 @@ Methods
    tepkit.io.vasp.Poscar.__str__
    tepkit.io.vasp.Poscar.get_lattice
    tepkit.io.vasp.Poscar.get_reciprocal_lattice
+   tepkit.io.vasp.Poscar.get_shengbte_types
    tepkit.io.vasp.Poscar.get_cartesian_ion_positions
    tepkit.io.vasp.Poscar.get_fractional_ion_positions
    tepkit.io.vasp.Poscar.get_volume
@@ -67,7 +70,6 @@ Methods
    tepkit.io.vasp.Poscar.get_atomic_numbers
    tepkit.io.vasp.Poscar.get_pymatgen_poscar
    tepkit.io.vasp.Poscar.to_supercell
-   tepkit.io.vasp.Poscar.get_shengbte_types
 
 
 
@@ -102,13 +104,6 @@ All Members
 
 
 
-.. py:attribute:: unscale_lattice
-   :no-index:
-   :type:  Optional[NumpyArray3x3[float]]
-   :value: None
-
-
-
 .. py:attribute:: has_species_names
    :no-index:
    :type:  bool
@@ -119,27 +114,20 @@ All Members
 .. py:attribute:: species_names
    :no-index:
    :type:  list[str]
-   :value: []
+   :value: ['Unknown']
 
 
 
 .. py:attribute:: ions_per_species
    :no-index:
    :type:  list[int]
-   :value: []
+   :value: [1]
 
 
 
 .. py:attribute:: ion_coordinates_mode
    :no-index:
    :type:  VaspCoordinatesMode
-
-
-
-.. py:attribute:: ion_positions
-   :no-index:
-   :type:  Optional[NumpyArrayNx3[float]]
-   :value: None
 
 
 
@@ -192,6 +180,18 @@ All Members
 
 
 
+.. py:property:: unscale_lattice
+   :no-index:
+   :type: NumpyArray3x3[float]
+
+
+
+.. py:property:: ion_positions
+   :no-index:
+   :type: NumpyArrayNx3[float]
+
+
+
 .. py:method:: from_string(string: str) -> Self
    :no-index:
    :classmethod:
@@ -238,6 +238,35 @@ All Members
 
 
 
+.. py:property:: species_index_per_ion
+   :no-index:
+   :type: list[int]
+
+
+   Returns a list of species indexes for each ion.
+   e.g. [0, 0, 1, 1, 2] from Bi2Se2Te
+
+
+
+.. py:method:: get_shengbte_types() -> list[int]
+   :no-index:
+
+
+   Returns a list of integers for ShengBTE-CONTROL-crystal-types.
+   e.g. [1, 1, 2, 2, 3] from Bi2Se2Te
+
+
+
+.. py:property:: species_name_per_ion
+   :no-index:
+   :type: list[str]
+
+
+   Returns a list of species names for each ion.
+   e.g. ["Bi", "Bi", "Se", "Se", "Te"] from Bi2Se2Te
+
+
+
 .. py:property:: thickness_info
    :no-index:
    :type: dict
@@ -248,13 +277,21 @@ All Members
 
 
 
-.. py:method:: get_cartesian_ion_positions() -> NumpyArrayNx3[float]
+.. py:method:: get_cartesian_ion_positions(*, threshold: float | None = None) -> NumpyArrayNx3[float]
    :no-index:
+
+
+   Return the Cartesian coordinates of ions.
+
+   :param threshold: The absolute values smaller than this value will be set to zero. (Recommended value: 1e-13)
 
 
 
 .. py:method:: get_fractional_ion_positions() -> NumpyArrayNx3[float]
    :no-index:
+
+
+   Return the fractional coordinates of ions.
 
 
 
@@ -310,15 +347,6 @@ All Members
 
 .. py:method:: to_supercell(na: int, nb: int, nc: int) -> Self
    :no-index:
-
-
-
-.. py:method:: get_shengbte_types(start=1)
-   :no-index:
-
-
-   返回每个原子的元素在元素列表的索引
-   例： [0, 0, 1, 1, 2]
 
 
 

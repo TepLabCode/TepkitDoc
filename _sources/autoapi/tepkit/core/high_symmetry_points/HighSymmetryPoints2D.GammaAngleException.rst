@@ -9,6 +9,8 @@ tepkit.core.high_symmetry_points.HighSymmetryPoints2D.GammaAngleException
 
    Common base class for all non-exit exceptions.
 
+   Initialize self.  See help(type(self)) for accurate signature.
+
 
 
 All Members

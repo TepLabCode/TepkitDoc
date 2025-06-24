@@ -1,7 +1,7 @@
 tepkit.utils.mpl_tools.Figure
 =============================
 
-.. py:class:: tepkit.utils.mpl_tools.Figure(width: float = 1.0, height: float = 0.9, dpi: float = None, font_size=None, style='tepkit_basic')
+.. py:class:: tepkit.utils.mpl_tools.Figure(width: float = 1.0, height: float = 0.9, dpi: float = None, font_size=None, style='tepkit_basic', projection=None)
 
 
 
@@ -15,6 +15,8 @@ Attributes
    | default set to 1.0."
    "``height``", "``None``", "| The ratio to the recommended height (3.334 inch = 1000 px at 300 dpi ≈ 8.47 cm),
    | default set to 0.9."
+   "``fig``", "``None``", ""
+   "``ax``", "``None``", ""
    "``legend``", "``None``", "The latest legend added by ``.add_legend()``."
    "``colorbar``", "``None``", "The latest colorbar added by ``.add_colorbar()``."
 
@@ -60,6 +62,16 @@ All Members
 
    | The ratio to the recommended height (3.334 inch = 1000 px at 300 dpi ≈ 8.47 cm),
    | default set to 0.9.
+
+
+
+.. py:attribute:: fig
+   :no-index:
+
+
+
+.. py:attribute:: ax
+   :no-index:
 
 
 
