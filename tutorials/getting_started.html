@@ -1,0 +1,821 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Getting Started &#8212; Tepkit Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=2c9eff3a" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=a681ed88"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/getting_started';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Work with thirdorder" href="work_with_thirdorder.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Tepkit Documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="work_with_thirdorder.html">Work with thirdorder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_functions.html">How to Add Custom Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adjust_cutoff_radius.html">Adjust cutoff radius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autoapi/tepkit/formulas/dp/index.html">Deformation Potential Theory</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">File API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../file/_overview.html">Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../file/vasp_file_classes.html">VASP File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Eigenval.html">EIGENVAL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Outcar.html">OUTCAR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Poscar.html">POSCAR</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../file/boltztrap2_file_classes.html">BoltzTraP2 File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/boltztrap2/Condtens.html">interpolation.condtens</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../file/phonopy_file_classes.html">Phonopy File Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/phonopy/ForceConstants.html">FORCE_CONSTANTS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../file/shengbte_file_classes.html">ShengBTE File Classes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../others/api_reference_overview.html">Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autoapi/tepkit/core/index.html">tepkit.core</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/atom/index.html">tepkit.core.atom</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/atom/AtomicNumber.html">tepkit.core.atom.AtomicNumber</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/geometry/index.html">tepkit.core.geometry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/geometry/Point2D.html">tepkit.core.geometry.Point2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/geometry/Line2D.html">tepkit.core.geometry.Line2D</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/high_symmetry_points/index.html">tepkit.core.high_symmetry_points</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.html">tepkit.core.high_symmetry_points.HighSymmetryPoints2D</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.LatticeGammaException.html">tepkit.core.high_symmetry_points.HighSymmetryPoints2D.LatticeGammaException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.GammaAngleException.html">tepkit.core.high_symmetry_points.HighSymmetryPoints2D.GammaAngleException</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/core/structure/index.html">tepkit.core.structure</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/index.html">tepkit.core.symmetry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/Axis.html">tepkit.core.symmetry.Axis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/BravaisSystem2D.html">tepkit.core.symmetry.BravaisSystem2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/BravaisLattice2D.html">tepkit.core.symmetry.BravaisLattice2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/CrystalSystem3D.html">tepkit.core.symmetry.CrystalSystem3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/symmetry/LayerGroup.html">tepkit.core.symmetry.LayerGroup</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/core/symmetry_data/index.html">tepkit.core.symmetry_data</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/core/vasp/index.html">tepkit.core.vasp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/core/vasp/VaspState.html">tepkit.core.vasp.VaspState</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autoapi/tepkit/io/index.html">tepkit.io</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/io/boltztrap2/index.html">tepkit.io.boltztrap2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/boltztrap2/Condtens.html">tepkit.io.boltztrap2.Condtens</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/indices/index.html">tepkit.io.indices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/output/index.html">tepkit.io.output</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/io/phonopy/index.html">tepkit.io.phonopy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/phonopy/ForceConstants.html">tepkit.io.phonopy.ForceConstants</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/index.html">tepkit.io.shengbte</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/Control.html">tepkit.io.shengbte.Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/SubdirFile.html">tepkit.io.shengbte.SubdirFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/OmegaShapedFile.html">tepkit.io.shengbte.OmegaShapedFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/OmegaLengthFile.html">tepkit.io.shengbte.OmegaLengthFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/OmegaParalleledFile.html">tepkit.io.shengbte.OmegaParalleledFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/NticksLengthFile.html">tepkit.io.shengbte.NticksLengthFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/TemperatureLengthFile.html">tepkit.io.shengbte.TemperatureLengthFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/CumulativeKappaTensor.html">tepkit.io.shengbte.CumulativeKappaTensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/CumulativeKappaVsOmegaTensor.html">tepkit.io.shengbte.CumulativeKappaVsOmegaTensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/KappaTensorVsT.html">tepkit.io.shengbte.KappaTensorVsT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/WP3.html">tepkit.io.shengbte.WP3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/Gruneisen.html">tepkit.io.shengbte.Gruneisen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/Omega.html">tepkit.io.shengbte.Omega</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/V.html">tepkit.io.shengbte.V</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/W.html">tepkit.io.shengbte.W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/shengbte/ForceConstants3rd.html">tepkit.io.shengbte.ForceConstants3rd</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/io/vasp/index.html">tepkit.io.vasp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Eigenval.html">tepkit.io.vasp.Eigenval</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/ExplicitKpoints.html">tepkit.io.vasp.ExplicitKpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Ibzkpt.html">tepkit.io.vasp.Ibzkpt</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Kpoints.html">tepkit.io.vasp.Kpoints</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Kpoints.Mode.html">tepkit.io.vasp.Kpoints.Mode</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Outcar.html">tepkit.io.vasp.Outcar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/Poscar.html">tepkit.io.vasp.Poscar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/io/vasp/VaspCoordinatesMode.html">tepkit.io.vasp.VaspCoordinatesMode</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/File.html">tepkit.io.File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/TextFile.html">tepkit.io.TextFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/StructuredTextFile.html">tepkit.io.StructuredTextFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/io/TableTextFile.html">tepkit.io.TableTextFile</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autoapi/tepkit/utils/index.html">tepkit.utils</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/utils/colors/index.html">tepkit.utils.colors</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/index.html">tepkit.utils.mpl_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/color_tools/index.html">tepkit.utils.mpl_tools.color_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/font_tools/index.html">tepkit.utils.mpl_tools.font_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/formatters/index.html">tepkit.utils.mpl_tools.formatters</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/index.html">tepkit.utils.mpl_tools.plotters</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.html">tepkit.utils.mpl_tools.plotters.kpoints_plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/plotter/index.html">tepkit.utils.mpl_tools.plotters.plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/rms_plotter/index.html">tepkit.utils.mpl_tools.plotters.rms_plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/BasePlotter.html">tepkit.utils.mpl_tools.plotters.BasePlotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/Plotter.html">tepkit.utils.mpl_tools.plotters.Plotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.html">tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.html">tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/ticker_tools/index.html">tepkit.utils.mpl_tools.ticker_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/mpl_tools/Figure.html">tepkit.utils.mpl_tools.Figure</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/utils/rich_tools/index.html">tepkit.utils.rich_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/rich_tools/TablePrinter.html">tepkit.utils.rich_tools.TablePrinter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autoapi/tepkit/utils/typing_tools/index.html">tepkit.utils.typing_tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autoapi/tepkit/utils/typing_tools/AutoClass.html">tepkit.utils.typing_tools.AutoClass</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autoapi/tepkit/formulas/index.html">tepkit.formulas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/formulas/dp/index.html">tepkit.formulas.dp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../autoapi/tepkit/formulas/thermoelectric/index.html">tepkit.formulas.thermoelectric</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/tutorials/getting_started.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Getting Started</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#as-a-command-line-interface-cli">As a Command-line Interface (CLI)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-convert-poscar-to-shengbte-input-file-control">Example: Convert <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code> to ShengBTE input file <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#as-a-python-module">As a Python Module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-tepkit-cli-commands-in-script">Using Tepkit CLI Commands in Script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prase-and-process-the-files">Prase and process the files</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
+<p>After you have successfully <a class="reference internal" href="installation.html"><span class="std std-doc">installed the package</span></a>,
+we can try to use it!</p>
+<section id="as-a-command-line-interface-cli">
+<h2>As a Command-line Interface (CLI)<a class="headerlink" href="#as-a-command-line-interface-cli" title="Link to this heading">#</a></h2>
+<p>First, let’s open the console and type <code class="docutils literal notranslate"><span class="pre">tepkit</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit
+</pre></div>
+</div>
+<p>You will see the following message:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>===== Tepkit Info =====
+ Version : 0.2.0
+ Location: /path/to/tepkit
+===== Tepkit Help =====
+
+ Usage: tepkit [OPTIONS] COMMAND [ARGS]...
+
+ Welcome to Tepkit!
+ ──────────────────────────────
+ Note: The command number (c__) may change with the version,
+ please use the full name when using tepkit in your script.
+
+╭─ Options ────────────────────────────────────────────────────────────╮
+│ --version    -v             Show the version of Tepkit.              │
+│ --where      -w             Show the path of Tepkit package.         │
+│ --log-level          LEVEL  Set the log level of current execution.  │
+│                             [default: 18]                            │
+│ --help       -h             Show this message and exit.              │
+╰──────────────────────────────────────────────────────────────────────╯
+╭─ Commands ───────────────────────────────────────────────────────────╮
+│ c01 | vasp                 VASP tools.                               │
+│ c02 | phonopy              Phonopy tools.                            │
+│ c03 | 3ord | thirdorder    thirdorder tools.                         │
+│ c04 | 4ord | fourthorder   fourthorder tools.                        │
+│ c05 | shengbte             ShengBTE tools.                           │
+│ c06 | sym                  symmetry tools.                           │
+│ c99 | custom               Custom functions.                         │
+╰──────────────────────────────────────────────────────────────────────╯
+╭─ Functions ──────────────────────────────────────────────────────────╮
+│ f01 | dp                   Calculate carrier mobility and relaxation │
+│                            time using DP method.                     │
+╰──────────────────────────────────────────────────────────────────────╯
+</pre></div>
+</div>
+<p><strong>Left</strong> is the <strong>command names</strong>,<br />
+<strong>Right</strong> is the <strong>command descriptions</strong>.</p>
+<p>The symbols <code class="docutils literal notranslate"><span class="pre">|</span></code> separates the aliases of the same command,<br />
+which means <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">c03</span></code> <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">3ord</span></code> and <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">thirdorder</span></code> are exactly the same command.</p>
+<p><strong>Functions</strong> panel contains each specific function.<br />
+<strong>Commands</strong> panel contains the groups of function.</p>
+<p>You can type <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">&lt;group_name&gt;</span></code> to go to the sub-menu of tepkit:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>phonopy
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> Usage: tepkit phonopy [OPTIONS] COMMAND [ARGS]...
+
+ Phonopy tools.
+
+╭─ Options ────────────────────────────────────────────────────────────╮
+│ --help  -h        Show this message and exit.                        │
+╰──────────────────────────────────────────────────────────────────────╯
+╭─ Functions ──────────────────────────────────────────────────────────╮
+│ rms   Calculate and Plot the root-mean-square (RMS) of               │
+│       FORCE_CONSTANTS.                                               │
+╰──────────────────────────────────────────────────────────────────────╯
+</pre></div>
+</div>
+<p>And you can always use <code class="docutils literal notranslate"><span class="pre">--help</span></code> or <code class="docutils literal notranslate"><span class="pre">-h</span></code> to check the usage of each command or function.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>phonopy<span class="w"> </span>rms<span class="w"> </span>-h
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> Usage: tepkit phonopy rms [OPTIONS]
+
+ Calculate and Plot the root-mean-square (RMS) of FORCE_CONSTANTS.
+ ──────────────────────────────
+ Required Files:
+ | FORCE_CONSTANTS
+ | SPOSCAR
+ Output Files:
+ | tepkit.RMS_of_2ndIFCs.csv
+ | tepkit.RMS_of_2ndIFCs.png
+
+╭─ Options ────────────────────────────────────────────────────────────╮
+│ --work-dir      -d              PATH  The directory where the        │
+│                                       required files is located.     │
+│                                       [default: ./]                  │
+│ --fc                            TEXT  The name of the                │
+│                                       FORCE_CONSTANTS file.          │
+│                                       [default: FORCE_CONSTANTS]     │
+│ --sposcar,--sc                  TEXT  The name of the SPOSCAR file.  │
+│                                       [default: SPOSCAR]             │
+│ --save-dir                      PATH  The directory where the output │
+│                                       files will be saved.           │
+│                                       (`--save-dir work_dir` will    │
+│                                       save the files to `work_dir`)  │
+│                                       [default: ./]                  │
+│ --save-name     -s              TEXT  The name of the output files.  │
+│                                       [default: Auto]                │
+│ --fit               --no-fit          [default: no-fit]              │
+│ --help          -h                    Show this message and exit.    │
+╰──────────────────────────────────────────────────────────────────────╯
+╭─ Plot Settings ──────────────────────────────────────────────────────╮
+│ --plot    --no-plot             Whether to plot the figure of data.  │
+│                                 [default: plot]                      │
+│ --nth     --no-nth              Show the distances of the atoms&#39;     │
+│                                 n-th neighbor.                       │
+│                                 [default: nth]                       │
+│ --log     --linear              Set the y-axis to logarithmic        │
+│                                 coordinates.                         │
+│                                 [default: linear]                    │
+│ --xlim                 MIN MAX  The range of the x-axis.             │
+│                                 [default: Auto, Auto]                │
+│ --ylim                 MIN MAX  The range of the y-axis.             │
+│                                 [default: Auto, Auto]                │
+╰──────────────────────────────────────────────────────────────────────╯
+</pre></div>
+</div>
+<section id="example-convert-poscar-to-shengbte-input-file-control">
+<h3>Example: Convert <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code> to ShengBTE input file <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code><a class="headerlink" href="#example-convert-poscar-to-shengbte-input-file-control" title="Link to this heading">#</a></h3>
+<p>Try to type the following command, and it will convert the <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code>
+file at current directory to <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code> format:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>shengbte<span class="w"> </span>control
+</pre></div>
+</div>
+<p>If <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code> is located at another directory or has a different name,
+you can use the <code class="docutils literal notranslate"><span class="pre">--poscar</span> <span class="pre">PATH</span></code> option to specify the file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>shengbte<span class="w"> </span>control<span class="w"> </span>--poscar<span class="w"> </span>/path/to/POSCAR.vasp
+</pre></div>
+</div>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">--help</span> <span class="pre">/</span> <span class="pre">-h</span></code> option to find more detail options:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; tepkit shengbte control -h
+
+ Usage: tepkit shengbte control [OPTIONS]
+
+ generate the CONTROL file from POSCAR file.
+
+╭─ Options ──────────────────────────────────────────────────────────────────────────╮
+│ --poscar             -p      PATH           Path of POSCAR file                    │
+│                                             [default: ./POSCAR]                    │
+│ --temperature        -t      INT            Single value of temperature (priority) │
+│                                             [default: None]                        │
+│ --temperatures,--ts          [INT INT INT]  [T_min, T_max(include), T_step]        │
+│                                             [default: None, None, None]            │
+│ --ngrid              -n      [INT INT INT]  Value of ngrid [default: 1, 1, 1]      │
+│ --supercell,--sc             [INT INT INT]  Supercell of FORCE_CONSTANTS_2ND       │
+│                                             [default: 1, 1, 1]                     │
+│ --path                       PATH           Save path of CONTROL file              │
+│                                             [default: ./CONTROL]                   │
+│ --help               -h                     Show this message and exit.            │
+╰────────────────────────────────────────────────────────────────────────────────────╯
+</pre></div>
+</div>
+<p>Thus, you can specify the <code class="docutils literal notranslate"><span class="pre">ngrid</span></code> <code class="docutils literal notranslate"><span class="pre">supercell</span></code> and <code class="docutils literal notranslate"><span class="pre">temperature</span></code> options in the <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code> file.</p>
+<p>Here is a complete example of this command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>shengbte<span class="w"> </span>control<span class="w"> </span>--poscar<span class="w"> </span>/path/to/POSCAR.vasp<span class="w"> </span>--ngrid<span class="w"> </span><span class="m">56</span><span class="w"> </span><span class="m">56</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>--sc<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>-t<span class="w"> </span><span class="m">300</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="as-a-python-module">
+<h2>As a Python Module<a class="headerlink" href="#as-a-python-module" title="Link to this heading">#</a></h2>
+<p>You can also use Tepkit as a Python module in your own Python scripts.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tepkit</span>
+</pre></div>
+</div>
+<section id="using-tepkit-cli-commands-in-script">
+<h3>Using Tepkit CLI Commands in Script<a class="headerlink" href="#using-tepkit-cli-commands-in-script" title="Link to this heading">#</a></h3>
+<p>If you want to use a CLI command in your Python script,
+you can check the <code class="docutils literal notranslate"><span class="pre">tepkit.cli.typer.commands_data.builtin_groups_data</span></code> module,
+and find the <code class="docutils literal notranslate"><span class="pre">group_module</span></code> and <code class="docutils literal notranslate"><span class="pre">function_name</span></code>of the desired command.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">rich</span> <span class="kn">import</span> <span class="nb">print</span>
+<span class="kn">from</span> <span class="nn">tepkit.cli.typer.commands_data</span> <span class="kn">import</span> <span class="n">builtin_groups_data</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">builtin_groups_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For example, if you want to use the <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">shengbte</span> <span class="pre">control</span></code> command,
+you can find:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="p">{</span>
+        <span class="s1">&#39;group_names&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;c05&#39;</span><span class="p">,</span> <span class="s1">&#39;shengbte&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;group_module&#39;</span><span class="p">:</span> <span class="s1">&#39;tepkit.functions.shengbte&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;group_help&#39;</span><span class="p">:</span> <span class="s1">&#39;ShengBTE tools.&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;sub_commands&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s1">&#39;command_names&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;control&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;function_name&#39;</span><span class="p">:</span> <span class="s1">&#39;poscar_to_control&#39;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+</pre></div>
+</div>
+<p>which means the <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">shengbte</span> <span class="pre">control</span></code> command is the <code class="docutils literal notranslate"><span class="pre">poscar_to_control()</span></code> function
+in the <code class="docutils literal notranslate"><span class="pre">tepkit.functions.shengbte</span></code> module,
+and you can use it as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tepkit.functions.shengbte</span> <span class="kn">import</span> <span class="n">poscar_to_control</span>
+
+<span class="n">poscar_to_control</span><span class="p">(</span>
+    <span class="n">poscar</span> <span class="o">=</span> <span class="s2">&quot;./POSCAR&quot;</span><span class="p">,</span>
+    <span class="n">temperature</span> <span class="o">=</span> <span class="mi">300</span><span class="p">,</span>
+    <span class="n">ngrid</span> <span class="o">=</span> <span class="p">(</span><span class="mi">56</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="n">supercell</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;./CONTROL&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="prase-and-process-the-files">
+<h3>Prase and process the files<a class="headerlink" href="#prase-and-process-the-files" title="Link to this heading">#</a></h3>
+<p>One of Tepkit’s core functions is to parse files from different software.</p>
+<p>You can find the supported file formats at <a class="reference internal" href="../file/_overview.html"><span class="std std-doc">this page</span></a>,</p>
+<p>Here is an example of parsing <code class="docutils literal notranslate"><span class="pre">vasp</span></code> files:</p>
+<ol class="arabic">
+<li><p>Import the class of your desired file format:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tepkit.io.boltztrap2</span> <span class="kn">import</span> <span class="n">Condtens</span>
+</pre></div>
+</div>
+</li>
+<li><p>Read the file by directory:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Default file name is &quot;interpolation.condtens&quot;</span>
+<span class="n">condtens</span> <span class="o">=</span> <span class="n">Condtens</span><span class="o">.</span><span class="n">from_dir</span><span class="p">(</span><span class="sa">R</span><span class="s2">&quot;.\input-boltztrap2&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Specify the file name</span>
+<span class="n">condtens</span> <span class="o">=</span> <span class="n">Condtens</span><span class="o">.</span><span class="n">from_dir</span><span class="p">(</span><span class="sa">R</span><span class="s2">&quot;.\input-boltztrap2&quot;</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;xxx.condtens&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>or by file path:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">condtens</span> <span class="o">=</span> <span class="n">Condtens</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="sa">R</span><span class="s2">&quot;.\input-boltztrap2\interpolation.condtens&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Get the data table:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="n">condtens</span><span class="o">.</span><span class="n">df</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>most data tables in Tepkit have three column indices:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">quantity</span></code>: the name/symbol of the quantity, like <code class="docutils literal notranslate"><span class="pre">T</span></code> and <code class="docutils literal notranslate"><span class="pre">sigma/tau</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unit</span></code>: the unit of the quantity, like <code class="docutils literal notranslate"><span class="pre">K</span></code> and <code class="docutils literal notranslate"><span class="pre">S/(m*s)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">direction</span></code>: the direction of the vector/tensor, like <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">xx</span></code></p></li>
+</ul>
+<p>You can get one specific column by: <code class="docutils literal notranslate"><span class="pre">df[(&quot;sigma/tau&quot;,</span> <span class="pre">&quot;S/(m*s)&quot;,</span> <span class="pre">&quot;xx&quot;)]</span></code>,<br />
+or get the tensor table by <code class="docutils literal notranslate"><span class="pre">df[(&quot;sigma/tau&quot;,</span> <span class="pre">&quot;S/(m*s)&quot;)]</span></code></p>
+</li>
+<li><p>Thus, you can easily analyze the data by any other Python libraries, like <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>.<br />
+Note: You can find many reference codes in our <a class="reference external" href="https://github.com/TepLabCode/Tepkit/tree/main/examples">example scripts</a>.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="installation.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Installation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="work_with_thirdorder.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Work with thirdorder</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#as-a-command-line-interface-cli">As a Command-line Interface (CLI)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-convert-poscar-to-shengbte-input-file-control">Example: Convert <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code> to ShengBTE input file <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#as-a-python-module">As a Python Module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-tepkit-cli-commands-in-script">Using Tepkit CLI Commands in Script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prase-and-process-the-files">Prase and process the files</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By TepLab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024–2025, TepLab.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
