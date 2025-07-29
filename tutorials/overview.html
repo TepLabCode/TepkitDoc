@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Getting Started &#8212; Tepkit Documentation</title>
+    <title>Overview &#8212; Tepkit Documentation</title>
   
   
   
@@ -45,11 +45,11 @@
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/getting_started';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/overview';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Work with thirdorder" href="work_with_thirdorder.html" />
-    <link rel="prev" title="Installation" href="installation.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="Tepkit Documentation" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -143,13 +143,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Overview</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="work_with_thirdorder.html">Work with thirdorder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting Figures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_functions.html">How to Add Custom Functions</a></li>
@@ -350,7 +350,7 @@
       
       
       
-      <li><a href="../_sources/tutorials/getting_started.md" target="_blank"
+      <li><a href="../_sources/tutorials/overview.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -426,7 +426,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Getting Started</h1>
+    <h1>Overview</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -436,15 +436,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#as-a-command-line-interface-cli">As a Command-line Interface (CLI)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-convert-poscar-to-shengbte-input-file-control">Example: Convert <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code> to ShengBTE input file <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#as-a-python-module">As a Python Module</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-tepkit-cli-commands-in-script">Using Tepkit CLI Commands in Script</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prase-and-process-the-files">Prase and process the files</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-cite">How To Cite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-name">About Name</a></li>
 </ul>
             </nav>
         </div>
@@ -456,256 +451,63 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
-<p>After you have successfully <a class="reference internal" href="installation.html"><span class="std std-doc">installed the package</span></a>,
-we can try to use it!</p>
-<section id="as-a-command-line-interface-cli">
-<h2>As a Command-line Interface (CLI)<a class="headerlink" href="#as-a-command-line-interface-cli" title="Link to this heading">#</a></h2>
-<p>First, let’s open the console and type <code class="docutils literal notranslate"><span class="pre">tepkit</span></code>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit
-</pre></div>
-</div>
-<p>You will see the following message:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>===== Tepkit Info =====
- Version : 0.2.0
- Location: /path/to/tepkit
-===== Tepkit Help =====
-
- Usage: tepkit [OPTIONS] COMMAND [ARGS]...
-
- Welcome to Tepkit!
- ──────────────────────────────
- Note: The command number (c__) may change with the version,
- please use the full name when using tepkit in your script.
-
-╭─ Options ────────────────────────────────────────────────────────────╮
-│ --version    -v             Show the version of Tepkit.              │
-│ --where      -w             Show the path of Tepkit package.         │
-│ --log-level          LEVEL  Set the log level of current execution.  │
-│                             [default: 18]                            │
-│ --help       -h             Show this message and exit.              │
-╰──────────────────────────────────────────────────────────────────────╯
-╭─ Commands ───────────────────────────────────────────────────────────╮
-│ c01 | vasp                 VASP tools.                               │
-│ c02 | phonopy              Phonopy tools.                            │
-│ c03 | 3ord | thirdorder    thirdorder tools.                         │
-│ c04 | 4ord | fourthorder   fourthorder tools.                        │
-│ c05 | shengbte             ShengBTE tools.                           │
-│ c06 | sym                  symmetry tools.                           │
-│ c99 | custom               Custom functions.                         │
-╰──────────────────────────────────────────────────────────────────────╯
-╭─ Functions ──────────────────────────────────────────────────────────╮
-│ f01 | dp                   Calculate carrier mobility and relaxation │
-│                            time using DP method.                     │
-╰──────────────────────────────────────────────────────────────────────╯
-</pre></div>
-</div>
-<p><strong>Left</strong> is the <strong>command names</strong>,<br />
-<strong>Right</strong> is the <strong>command descriptions</strong>.</p>
-<p>The symbols <code class="docutils literal notranslate"><span class="pre">|</span></code> separates the aliases of the same command,<br />
-which means <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">c03</span></code> <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">3ord</span></code> and <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">thirdorder</span></code> are exactly the same command.</p>
-<p><strong>Functions</strong> panel contains each specific function.<br />
-<strong>Commands</strong> panel contains the groups of function.</p>
-<p>You can type <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">&lt;group_name&gt;</span></code> to go to the sub-menu of tepkit:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>phonopy
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> Usage: tepkit phonopy [OPTIONS] COMMAND [ARGS]...
-
- Phonopy tools.
-
-╭─ Options ────────────────────────────────────────────────────────────╮
-│ --help  -h        Show this message and exit.                        │
-╰──────────────────────────────────────────────────────────────────────╯
-╭─ Functions ──────────────────────────────────────────────────────────╮
-│ rms   Calculate and Plot the root-mean-square (RMS) of               │
-│       FORCE_CONSTANTS.                                               │
-╰──────────────────────────────────────────────────────────────────────╯
-</pre></div>
-</div>
-<p>And you can always use <code class="docutils literal notranslate"><span class="pre">--help</span></code> or <code class="docutils literal notranslate"><span class="pre">-h</span></code> to check the usage of each command or function.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>phonopy<span class="w"> </span>rms<span class="w"> </span>-h
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> Usage: tepkit phonopy rms [OPTIONS]
-
- Calculate and Plot the root-mean-square (RMS) of FORCE_CONSTANTS.
- ──────────────────────────────
- Required Files:
- | FORCE_CONSTANTS
- | SPOSCAR
- Output Files:
- | tepkit.RMS_of_2ndIFCs.csv
- | tepkit.RMS_of_2ndIFCs.png
-
-╭─ Options ────────────────────────────────────────────────────────────╮
-│ --work-dir      -d              PATH  The directory where the        │
-│                                       required files is located.     │
-│                                       [default: ./]                  │
-│ --fc                            TEXT  The name of the                │
-│                                       FORCE_CONSTANTS file.          │
-│                                       [default: FORCE_CONSTANTS]     │
-│ --sposcar,--sc                  TEXT  The name of the SPOSCAR file.  │
-│                                       [default: SPOSCAR]             │
-│ --save-dir                      PATH  The directory where the output │
-│                                       files will be saved.           │
-│                                       (`--save-dir work_dir` will    │
-│                                       save the files to `work_dir`)  │
-│                                       [default: ./]                  │
-│ --save-name     -s              TEXT  The name of the output files.  │
-│                                       [default: Auto]                │
-│ --fit               --no-fit          [default: no-fit]              │
-│ --help          -h                    Show this message and exit.    │
-╰──────────────────────────────────────────────────────────────────────╯
-╭─ Plot Settings ──────────────────────────────────────────────────────╮
-│ --plot    --no-plot             Whether to plot the figure of data.  │
-│                                 [default: plot]                      │
-│ --nth     --no-nth              Show the distances of the atoms&#39;     │
-│                                 n-th neighbor.                       │
-│                                 [default: nth]                       │
-│ --log     --linear              Set the y-axis to logarithmic        │
-│                                 coordinates.                         │
-│                                 [default: linear]                    │
-│ --xlim                 MIN MAX  The range of the x-axis.             │
-│                                 [default: Auto, Auto]                │
-│ --ylim                 MIN MAX  The range of the y-axis.             │
-│                                 [default: Auto, Auto]                │
-╰──────────────────────────────────────────────────────────────────────╯
-</pre></div>
-</div>
-<section id="example-convert-poscar-to-shengbte-input-file-control">
-<h3>Example: Convert <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code> to ShengBTE input file <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code><a class="headerlink" href="#example-convert-poscar-to-shengbte-input-file-control" title="Link to this heading">#</a></h3>
-<p>Try to type the following command, and it will convert the <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code>
-file at current directory to <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code> format:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>shengbte<span class="w"> </span>control
-</pre></div>
-</div>
-<p>If <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code> is located at another directory or has a different name,
-you can use the <code class="docutils literal notranslate"><span class="pre">--poscar</span> <span class="pre">PATH</span></code> option to specify the file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>shengbte<span class="w"> </span>control<span class="w"> </span>--poscar<span class="w"> </span>/path/to/POSCAR.vasp
-</pre></div>
-</div>
-<p>You can use the <code class="docutils literal notranslate"><span class="pre">--help</span> <span class="pre">/</span> <span class="pre">-h</span></code> option to find more detail options:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; tepkit shengbte control -h
-
- Usage: tepkit shengbte control [OPTIONS]
-
- generate the CONTROL file from POSCAR file.
-
-╭─ Options ──────────────────────────────────────────────────────────────────────────╮
-│ --poscar             -p      PATH           Path of POSCAR file                    │
-│                                             [default: ./POSCAR]                    │
-│ --temperature        -t      INT            Single value of temperature (priority) │
-│                                             [default: None]                        │
-│ --temperatures,--ts          [INT INT INT]  [T_min, T_max(include), T_step]        │
-│                                             [default: None, None, None]            │
-│ --ngrid              -n      [INT INT INT]  Value of ngrid [default: 1, 1, 1]      │
-│ --supercell,--sc             [INT INT INT]  Supercell of FORCE_CONSTANTS_2ND       │
-│                                             [default: 1, 1, 1]                     │
-│ --path                       PATH           Save path of CONTROL file              │
-│                                             [default: ./CONTROL]                   │
-│ --help               -h                     Show this message and exit.            │
-╰────────────────────────────────────────────────────────────────────────────────────╯
-</pre></div>
-</div>
-<p>Thus, you can specify the <code class="docutils literal notranslate"><span class="pre">ngrid</span></code> <code class="docutils literal notranslate"><span class="pre">supercell</span></code> and <code class="docutils literal notranslate"><span class="pre">temperature</span></code> options in the <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code> file.</p>
-<p>Here is a complete example of this command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>tepkit<span class="w"> </span>shengbte<span class="w"> </span>control<span class="w"> </span>--poscar<span class="w"> </span>/path/to/POSCAR.vasp<span class="w"> </span>--ngrid<span class="w"> </span><span class="m">56</span><span class="w"> </span><span class="m">56</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>--sc<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>-t<span class="w"> </span><span class="m">300</span>
-</pre></div>
-</div>
-</section>
-</section>
-<section id="as-a-python-module">
-<h2>As a Python Module<a class="headerlink" href="#as-a-python-module" title="Link to this heading">#</a></h2>
-<p>You can also use Tepkit as a Python module in your own Python scripts.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tepkit</span>
-</pre></div>
-</div>
-<section id="using-tepkit-cli-commands-in-script">
-<h3>Using Tepkit CLI Commands in Script<a class="headerlink" href="#using-tepkit-cli-commands-in-script" title="Link to this heading">#</a></h3>
-<p>If you want to use a CLI command in your Python script,
-you can check the <code class="docutils literal notranslate"><span class="pre">tepkit.cli.typer.commands_data.builtin_groups_data</span></code> module,
-and find the <code class="docutils literal notranslate"><span class="pre">group_module</span></code> and <code class="docutils literal notranslate"><span class="pre">function_name</span></code>of the desired command.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">rich</span> <span class="kn">import</span> <span class="nb">print</span>
-<span class="kn">from</span> <span class="nn">tepkit.cli.typer.commands_data</span> <span class="kn">import</span> <span class="n">builtin_groups_data</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">builtin_groups_data</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>For example, if you want to use the <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">shengbte</span> <span class="pre">control</span></code> command,
-you can find:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="p">{</span>
-        <span class="s1">&#39;group_names&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;c05&#39;</span><span class="p">,</span> <span class="s1">&#39;shengbte&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;group_module&#39;</span><span class="p">:</span> <span class="s1">&#39;tepkit.functions.shengbte&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;group_help&#39;</span><span class="p">:</span> <span class="s1">&#39;ShengBTE tools.&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;sub_commands&#39;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s1">&#39;command_names&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;control&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;function_name&#39;</span><span class="p">:</span> <span class="s1">&#39;poscar_to_control&#39;</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-</pre></div>
-</div>
-<p>which means the <code class="docutils literal notranslate"><span class="pre">tepkit</span> <span class="pre">shengbte</span> <span class="pre">control</span></code> command is the <code class="docutils literal notranslate"><span class="pre">poscar_to_control()</span></code> function
-in the <code class="docutils literal notranslate"><span class="pre">tepkit.functions.shengbte</span></code> module,
-and you can use it as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tepkit.functions.shengbte</span> <span class="kn">import</span> <span class="n">poscar_to_control</span>
-
-<span class="n">poscar_to_control</span><span class="p">(</span>
-    <span class="n">poscar</span> <span class="o">=</span> <span class="s2">&quot;./POSCAR&quot;</span><span class="p">,</span>
-    <span class="n">temperature</span> <span class="o">=</span> <span class="mi">300</span><span class="p">,</span>
-    <span class="n">ngrid</span> <span class="o">=</span> <span class="p">(</span><span class="mi">56</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-    <span class="n">supercell</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;./CONTROL&quot;</span><span class="p">,</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="prase-and-process-the-files">
-<h3>Prase and process the files<a class="headerlink" href="#prase-and-process-the-files" title="Link to this heading">#</a></h3>
-<p>One of Tepkit’s core functions is to parse files from different software.</p>
-<p>You can find the supported file formats at <a class="reference internal" href="../file/_overview.html"><span class="std std-doc">this page</span></a>,</p>
-<p>Here is an example of parsing <code class="docutils literal notranslate"><span class="pre">boltztrap2</span></code> files:</p>
-<ol class="arabic">
-<li><p>Import the class of your desired file format:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tepkit.io.boltztrap2</span> <span class="kn">import</span> <span class="n">Condtens</span>
-</pre></div>
-</div>
-</li>
-<li><p>Read the file by directory:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Default file name is &quot;interpolation.condtens&quot;</span>
-<span class="n">condtens</span> <span class="o">=</span> <span class="n">Condtens</span><span class="o">.</span><span class="n">from_dir</span><span class="p">(</span><span class="sa">R</span><span class="s2">&quot;.\input-boltztrap2&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Specify the file name</span>
-<span class="n">condtens</span> <span class="o">=</span> <span class="n">Condtens</span><span class="o">.</span><span class="n">from_dir</span><span class="p">(</span><span class="sa">R</span><span class="s2">&quot;.\input-boltztrap2&quot;</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;xxx.condtens&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>or by file path:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">condtens</span> <span class="o">=</span> <span class="n">Condtens</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="sa">R</span><span class="s2">&quot;.\input-boltztrap2\interpolation.condtens&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
-<li><p>Get the data table:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="n">condtens</span><span class="o">.</span><span class="n">df</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>most data tables in Tepkit have three column indices:</p>
+  <section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h1>
+<p><strong>Tepkit</strong> is a user-friendly program for accelerating
+the calculation and analysis processes of
+transport, electronic, and thermoelectric properties of materials.</p>
+<hr class="docutils" />
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">quantity</span></code>: the name/symbol of the quantity, like <code class="docutils literal notranslate"><span class="pre">T</span></code> and <code class="docutils literal notranslate"><span class="pre">sigma/tau</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">unit</span></code>: the unit of the quantity, like <code class="docutils literal notranslate"><span class="pre">K</span></code> and <code class="docutils literal notranslate"><span class="pre">S/(m*s)</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">direction</span></code>: the direction of the vector/tensor, like <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">xx</span></code></p></li>
+<li><p>Calculate the root-mean-square (RMS) of interatomic force constants (IFCs)</p></li>
+<li><p>Visualize the RMS of IFCs in real-space</p></li>
+<li><p>Adjust the cutoff radius of the anharmonic IFCs calculations without repeated calculations</p></li>
+<li><p>Detect the duplicated jobs generated by thirdorder/fourthorder and skip them</p></li>
+<li><p>Calculate the DOS average effective mass from the BoltzTraP2 results</p></li>
+<li><p>Calculate the carrier mobility and the relaxation time using deformation potential (DP) theory</p></li>
+<li><p>Apply the effective thickness correction (ETC) to the properties of 2D materials</p></li>
+<li><p>Plot the transport property figures from the output files of the DFT calculations</p></li>
+<li><p>Plot the heatmap of the band structure (3D band structure) of the 2D materials</p></li>
+<li><p>Get the layer group of 2D materials through Spglib and derive various symmetry information</p></li>
+<li><p>Allow users to add custom functions into the command-line interface (CLI)</p></li>
 </ul>
-<p>You can get one specific column by: <code class="docutils literal notranslate"><span class="pre">df[(&quot;sigma/tau&quot;,</span> <span class="pre">&quot;S/(m*s)&quot;,</span> <span class="pre">&quot;xx&quot;)]</span></code>,<br />
-or get the tensor table by <code class="docutils literal notranslate"><span class="pre">df[(&quot;sigma/tau&quot;,</span> <span class="pre">&quot;S/(m*s)&quot;)]</span></code></p>
-</li>
-<li><p>Thus, you can easily analyze the data by any other Python libraries, like <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>.<br />
-Note: You can find many reference codes in our <a class="reference external" href="https://github.com/TepLabCode/Tepkit/tree/main/examples">example scripts</a>.</p></li>
-</ol>
 </section>
+<section id="how-to-cite">
+<h2>How To Cite<a class="headerlink" href="#how-to-cite" title="Link to this heading">#</a></h2>
+<p>If you have used Tepkit in your work, please cite our paper
+which indeed helps the Tepkit project to continue:</p>
+<ul class="simple">
+<li><p>S.-H. Cao, X.-R. Chen, Z.-Y. Zeng, H.-Y. Geng, Tepkit: A toolkit for measuring and visualizing interatomic force constants and accelerating transport-property calculations, Comput. Mater. Sci. 259 (2025) 114151, <a class="reference external" href="https://doi.org/10.1016/j.commatsci.2025.114151">DOI</a>.</p></li>
+</ul>
+<blockquote>
+<div><p>✏️ Examples described in the paper are available in the <code class="docutils literal notranslate"><span class="pre">examples/paper_examples</span></code> directory.</p>
+</div></blockquote>
+</section>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
+<p>As of now, this package is only supported on <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">&gt;=</span> <span class="pre">3.11</span></code>.</p>
+<p>The following libraries are required to run basic functions and will be installed automatically:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">typer</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">docstring_parser</span></code> for Command-Line Interface (CLI)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">loguru</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">tqdm</span></code>for Logging</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">toml</span></code> for Configuration File</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numpy</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">scipy</span></code> for Mathmatical Calculations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas</span></code> for Table Data Handling</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> for Plotting</p></li>
+</ul>
+<blockquote>
+<div><p>⚠️ Some commands may require additional packages, if you get a <code class="docutils literal notranslate"><span class="pre">ModuleNotFoundError</span></code> while running,
+try to install it by pip and then re-run the command.</p>
+</div></blockquote>
+</section>
+<section id="about-name">
+<h2>About Name<a class="headerlink" href="#about-name" title="Link to this heading">#</a></h2>
+<p><strong>Tepkit</strong> is a python package to assist with the first principles calculations.</p>
+<ul class="simple">
+<li><p>It is a <strong>T</strong>ransport and <strong>E</strong>lectronic <strong>P</strong>roperties Tool<strong>kit</strong>.</p></li>
+<li><p>It is also a <strong>T</strong>hermo<strong>E</strong>lectric <strong>P</strong>roperties Tool<strong>kit</strong>.</p></li>
+</ul>
 </section>
 </section>
 
@@ -721,20 +523,20 @@ Note: You can find many reference codes in our <a class="reference external" hre
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="installation.html"
+       href="../index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Installation</p>
+        <p class="prev-next-title">Tepkit Documentation</p>
       </div>
     </a>
     <a class="right-next"
-       href="work_with_thirdorder.html"
+       href="installation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Work with thirdorder</p>
+        <p class="prev-next-title">Installation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -755,15 +557,10 @@ Note: You can find many reference codes in our <a class="reference external" hre
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#as-a-command-line-interface-cli">As a Command-line Interface (CLI)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-convert-poscar-to-shengbte-input-file-control">Example: Convert <code class="docutils literal notranslate"><span class="pre">POSCAR</span></code> to ShengBTE input file <code class="docutils literal notranslate"><span class="pre">CONTROL</span></code></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#as-a-python-module">As a Python Module</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-tepkit-cli-commands-in-script">Using Tepkit CLI Commands in Script</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prase-and-process-the-files">Prase and process the files</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-cite">How To Cite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-name">About Name</a></li>
 </ul>
   </nav></div>
 
